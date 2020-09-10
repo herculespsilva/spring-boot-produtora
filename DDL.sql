@@ -43,7 +43,7 @@ create table pes_pessoa(
 create table fmg_filmagem (
 	fmg_id bigint unsigned primary key auto_increment,
     fmg_nome varchar(50) not null,
-    fmg_ano date not null,
+    fmg_ano bigint not null,
     fmg_duracao float not null,
     diretor bigint unsigned,
     constraint fmg_pes_fk foreign key (diretor)
@@ -87,8 +87,8 @@ create table atu_atuacao (
                                                                    ("Tyler Briggs","38314493399","D","Luta"), 
                                                                    ("Clark Knox","47725317999","D","Dança");
     
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue ut lacus. Nulla","1919-10-09",4,1),
-                                                                           ("tortor. Integer aliquam adipiscing","2121-02-22",4,2);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue ut lacus. Nulla", 1998,4,1),
+                                                                           ("tortor. Integer aliquam adipiscing", 2012,4,2);
     
     INSERT INTO nov_novela (fmg_id,nov_capitulo,nov_desc_cap) VALUES (1,11,"Lorem ipsum");
 

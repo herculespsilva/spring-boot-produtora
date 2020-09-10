@@ -1,6 +1,5 @@
 package br.gov.sp.fatec.springbootprodutora.entity;
 
-import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.AttributeOverride;
@@ -25,7 +24,7 @@ public class Filmagem extends Main {
 	private String nome;
 	
 	@Column (name="fmg_ano")
-	private Date ano;
+	private Long ano;
 	
 	@Column (name="fmg_duracao")
 	private float duracao;
@@ -48,11 +47,11 @@ public class Filmagem extends Main {
 		this.nome = nome;
 	}
 
-	public Date getAno() {
+	public Long getAno() {
 		return ano;
 	}
 
-	public void setAno(Date ano) {
+	public void setAno(Long ano) {
 		this.ano = ano;
 	}
 

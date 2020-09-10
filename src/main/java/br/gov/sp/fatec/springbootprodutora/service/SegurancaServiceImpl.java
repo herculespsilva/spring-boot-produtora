@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
+import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.UsuarioRepository;
@@ -36,6 +37,12 @@ public class SegurancaServiceImpl implements SegurancaService {
         usuarioRepo.save(usuario);
 
         return usuario;
+    }
+
+    @Transactional
+    public Filme criaFilme(String nome, int ano, Float duracao, String descricao, String diretor, String ator, String duble) {
+
+        return null;
     }
     
 }
