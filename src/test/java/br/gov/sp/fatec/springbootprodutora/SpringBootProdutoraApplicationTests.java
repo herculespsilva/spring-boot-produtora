@@ -12,6 +12,7 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
+import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.UsuarioRepository;
@@ -49,21 +50,6 @@ class SpringBootProdutoraApplicationTests {
         usuarioRepo.save(usuario);
 
         assertNotNull(usuario.getAutorizacoes().iterator().next().getId());
-    }
-
-    @Test
-    void testaInsercaoAutorizacao() {
-        Usuario usuario = new Usuario();
-        usuario.setNome("Lucas2");
-        usuario.setSenha("pass123");
-        usuarioRepo.save(usuario);
-        Autorizacao aut = new Autorizacao();
-        aut.setNome("ROLE_USUARIO2");
-        aut.setUsuarios(new HashSet<Usuario>());
-        aut.getUsuarios().add(usuario);
-        autRepo.save(aut);
-        
-        assertNotNull(aut.getUsuarios().iterator().next().getId());
     }
 
     @Test
@@ -127,5 +113,9 @@ class SpringBootProdutoraApplicationTests {
     }
 
     // ------------------------------------------------------------------------------------------------------------------
-    
+    @Test
+    void testaServicoCriaFilme() {
+         Filme filme = segService.criaFilme("Tropa de Elite", 2020l, 3.3f, "Filme do Brasil", "Luke Winters", "Cairo Head", "Clark Knox");
+         assertNotNull(filme);
+    }
 }

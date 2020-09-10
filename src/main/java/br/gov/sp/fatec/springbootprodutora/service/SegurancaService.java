@@ -6,5 +6,5 @@ import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 public interface SegurancaService {
     public Usuario criaUsuario(String nome, String senha, String autorizacao);
 
-    public Filme criaFilme(String nome, int ano, Float duracao, String descricao, String diretor, String ator, String duble);
+    public Filme criaFilme(String nome, Long ano, Float duracao, String descricao, String diretor, String ator, String duble);
 }

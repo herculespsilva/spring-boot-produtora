@@ -11,6 +11,7 @@ import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
 import br.gov.sp.fatec.springbootprodutora.entity.Duble;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
+import br.gov.sp.fatec.springbootprodutora.entity.Pessoa;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 import br.gov.sp.fatec.springbootprodutora.repository.AtorRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
@@ -59,11 +60,24 @@ public class SegurancaServiceImpl implements SegurancaService {
     }
 
     @Transactional
-    public Filme criaFilme(String nome, int ano, Float duracao, String descricao, String nomeDiretor, String atorNome, String dubleNome) {
+    public Filme criaFilme(String nome, Long ano, Float duracao, String descricao, String nomeDiretor, String atorNome, String dubleNome) {
             Diretor diretor = diretorRepo.findByNome(nomeDiretor);
             Ator ator = atorRepo.findByNome(atorNome);
             Duble duble = dubleRepo.findByNome(dubleNome);
-        return null;
+
+            Filme filme = new Filme();
+            filme.setNome(nome);
+            filme.setAno(ano);
+            filme.setDuracao(duracao);
+            filme.setDescricao(descricao);
+            filme.setDiretor(diretor);
+            filme.setPessoas(new HashSet<Pessoa>());
+            filme.getPessoas().add(ator);
+            filme.getPessoas().add(duble);
+            
+            fimeRepo.save(filme);
+
+            return filme;
     }
     
 }
