@@ -1,4 +1,4 @@
-INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","92427130099","T"), ("Hop Bowman","29949872899","T"), ("Preston Bailey","18252066499","T"), ("Connor Hays","53538461799","T"), ("Damian George","27870155399","T");
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","92427130099","T"), ("Hop Bowman","29949872899","T"), ("Preston Bailey","18252066499","T"), ("Connor Hays","53538461799","T"), ("Damian George","27870155399","T");
 
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Owen Simpson","16725546299","A","Musica"), ("Cairo Head","45516724899","A","Musica"), ("Tyler Briggs","38314493399","A","Musica"), ("Clark Knox","47725317999","A","Musica"), ("Aladdin Irwin","48361232399","A","Musica");
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Abdul Mccray","39774555799","A","Teatro"), ("Kareem Hyde","74229628099","A","Teatro"), ("Beck Berg","43302315599","A","Teatro"), ("Erich Waters","68470720599","A","Teatro"), ("Christopher Stark","42446110799","A","Teatro");

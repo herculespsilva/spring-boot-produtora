@@ -78,3 +78,25 @@ create table atu_atuacao (
     insert into usr_usuario (usr_nome, usr_senha) values ("admin", '123');
     insert into aut_autorizacao (aut_nome) values ('ROLE_ADMIN');
     insert into uau_usuario_autorizacao values(1, 1);
+
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","92427130099","T"), 
+                                                          ("Hop Bowman","29949872899","T");
+    
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Owen Simpson","16725546299","A","Musica"),         
+                                                                   ("Cairo Head","45516724899","A","Musica"), 
+                                                                   ("Tyler Briggs","38314493399","D","Luta"), 
+                                                                   ("Clark Knox","47725317999","D","Dança");
+    
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue ut lacus. Nulla","1919-10-09",4,1),
+                                                                           ("tortor. Integer aliquam adipiscing","2121-02-22",4,2);
+    
+    INSERT INTO nov_novela (fmg_id,nov_capitulo,nov_desc_cap) VALUES (1,11,"Lorem ipsum");
+
+    INSERT INTO flm_filme (fmg_id,flm_descricao) VALUES (2,"ac mattis velit justo nec ante.");
+
+    INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),
+                                                   (4, 1), 
+                                                   (1, 2),
+                                                   (2, 2), 
+                                                   (3, 2);
+                                                   
