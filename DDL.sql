@@ -87,12 +87,12 @@ create table atu_atuacao (
                                                                    ("Tyler Briggs","38314493399","D","Luta"), 
                                                                    ("Clark Knox","47725317999","D","Dança");
     
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("augue ut lacus. Nulla", 1998,4,1),
-                                                                           ("tortor. Integer aliquam adipiscing", 2012,4,2);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("Casa Sombria", 1998,4,1),
+                                                                           ("Uma noite na floresta", 2012,4,2);
     
     INSERT INTO nov_novela (fmg_id,nov_capitulo,nov_desc_cap) VALUES (1,11,"Lorem ipsum");
 
-    INSERT INTO flm_filme (fmg_id,flm_descricao) VALUES (2,"ac mattis velit justo nec ante.");
+    INSERT INTO flm_filme (fmg_id,flm_descricao) VALUES (2,"Lorem ipsum velit justo nec ante.");
 
     INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),
                                                    (4, 1), 

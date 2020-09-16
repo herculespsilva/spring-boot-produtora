@@ -9,7 +9,7 @@ public interface FilmeRepository extends JpaRepository<Filme, Long>{
     public Filme findByNome(String nome);
 
     @Query("select f from Filme f inner join f.diretor d where d.nome = ?1")
-    public Filme buscarPorNome(String diretor);
+    public Filme buscarPorNomeDiretor(String diretor);
 
     public Filme findByDiretorNome(String diretor);
 
