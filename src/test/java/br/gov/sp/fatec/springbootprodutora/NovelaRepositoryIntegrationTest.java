@@ -62,6 +62,5 @@ public class NovelaRepositoryIntegrationTest {
     void testBuscaNovelaPorAnoEQuantidadeCapitulo() {
         Novela novela = novelaRepo.findByAnoAndCapitulo(1998l, 11l);
         assertNotNull(novela);
-    }
-    
+    }  
 }

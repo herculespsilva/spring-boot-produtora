@@ -11,20 +11,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.gov.sp.fatec.springbootprodutora.entity.Ator;
 import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
-import br.gov.sp.fatec.springbootprodutora.entity.Duble;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
-import br.gov.sp.fatec.springbootprodutora.entity.Novela;
-import br.gov.sp.fatec.springbootprodutora.entity.Pessoa;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
-import br.gov.sp.fatec.springbootprodutora.repository.AtorRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.DiretorRepository;
-import br.gov.sp.fatec.springbootprodutora.repository.DubleRepository;
-import br.gov.sp.fatec.springbootprodutora.repository.FilmeRepository;
-import br.gov.sp.fatec.springbootprodutora.repository.NovelaRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.UsuarioRepository;
 import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
 
@@ -45,18 +37,6 @@ class SpringBootProdutoraApplicationTests {
 
     @Autowired
     private DiretorRepository diretorRepo;
-
-    @Autowired
-    private AtorRepository atorRepo;
-
-    @Autowired
-    private DubleRepository dubleRepo;
-
-    @Autowired
-    private NovelaRepository novelaRepo;
-
-    @Autowired
-    private FilmeRepository filmeRepo;
 
 	@Test
 	void contextLoads() {
@@ -142,30 +122,7 @@ class SpringBootProdutoraApplicationTests {
     void testaServicoCriaFilme() {
          Filme filme = segService.criaFilme("Tropa de Elite", 2020l, 3.3f, "Filme do Brasil", "Luke Winters", "Cairo Head", "Clark Knox");
          assertNotNull(filme);
-    }
-
-    @Test
-    void testaInsercaoFilme() {
-        Diretor diretor = diretorRepo.findByNome("Hop Bowman");
-        Ator ator = atorRepo.findByNome("Owen Simpson");
-        Duble duble = dubleRepo.findByNome("Tyler Briggs");
-
-
-        Filme filme = new Filme();
-        filme.setNome("O atirador");
-        filme.setAno(2002l);
-        filme.setDuracao(2.45f);
-        filme.setDescricao("Um filme de guerra!");
-        filme.setDiretor(diretor);
-        filme.setPessoas(new HashSet<Pessoa>());
-        filme.getPessoas().add(ator);
-        filme.getPessoas().add(duble);
-        filmeRepo.save(filme);
-
-        assertNotNull(filme.getId());
-    }
-
-    
+    }    
 
     @Test
     void testaInsercaoDiretor() {
@@ -176,29 +133,4 @@ class SpringBootProdutoraApplicationTests {
 
         assertNotNull(diretor.getId());
     }
-
-    @Test
-    void testBuscaFilmePorDiretor() {
-        List<Filme> filme = filmeRepo.findByDiretorNome("Luke Winters");
-        assertNotNull(filme);
-    }
-
-    @Test
-    void testBuscaFilmePorDiretorQuery() {
-        List<Filme> filme = filmeRepo.buscaFilmePorDiretor("Luke Winters");
-        assertNotNull(filme);
-    }
-
-    @Test
-    void testBuscaFilmePorNomeEDiretorQuery() {
-        Filme filme = filmeRepo.buscaFilmePorNomeEDiretor("Uma noite na floresta", "Hop Bowman");
-        assertNotNull(filme);
-    }
-
-    @Test
-    void testBuscaNovelaPorAnoEQuantidadeCapitulo() {
-        Novela novela = novelaRepo.findByAnoAndCapitulo(1998l, 11l);
-        assertNotNull(novela);
-    }
-
 }
