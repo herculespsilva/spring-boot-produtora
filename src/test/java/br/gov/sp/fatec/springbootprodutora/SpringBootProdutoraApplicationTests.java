@@ -165,26 +165,7 @@ class SpringBootProdutoraApplicationTests {
         assertNotNull(filme.getId());
     }
 
-    @Test
-    void testaInsercaoNovela() {
-        Diretor diretor = diretorRepo.findByNome("Luke Winters");
-        Ator ator = atorRepo.findByNome("Cairo Head");
-        Duble duble = dubleRepo.findByNome("Clark Knox");
-
-        Novela novela = new Novela();
-        novela.setNome("A carminha");
-        novela.setAno(2002l);
-        novela.setDuracao(2.45f);
-        novela.setDiretor(diretor);
-        novela.setCapitulo(30l);
-        novela.setDescricaoCap("Uma empregada rica");
-        novela.setPessoas(new HashSet<Pessoa>());
-        novela.getPessoas().add(ator);
-        novela.getPessoas().add(duble);
-        novelaRepo.save(novela);
-
-        assertNotNull(novela.getId());
-    }
+    
 
     @Test
     void testaInsercaoDiretor() {
@@ -212,6 +193,12 @@ class SpringBootProdutoraApplicationTests {
     void testBuscaFilmePorNomeEDiretorQuery() {
         Filme filme = filmeRepo.buscaFilmePorNomeEDiretor("Uma noite na floresta", "Hop Bowman");
         assertNotNull(filme);
+    }
+
+    @Test
+    void testBuscaNovelaPorAnoEQuantidadeCapitulo() {
+        Novela novela = novelaRepo.findByAnoAndCapitulo(1998l, 11l);
+        assertNotNull(novela);
     }
 
 }
