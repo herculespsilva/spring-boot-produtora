@@ -1,4 +1,4 @@
-<img src="image/logo_fatecsjc.png" height=150px>
+<img src="imagem/logo_fatecsjc.png" height=150px>
 
 # Laboratorio de projeto de Banco de dados
 Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores, diretores, dublês, e diferentes categorias de filmes.
@@ -11,10 +11,10 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - Jonathan Moreno Martins
 
 ## Tecnologias utilizadas:
-- [<img src="image\java.jpg" height=40px>](https://www.oracle.com/br/Java/) JAVA
-- [<img src="image\mysql.png" height=40px>](https://www.mysql.com//) MySQL
-- [<img src="image\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
-- [<img src="image\hibernate.png" height=40px>](https://hibernate.org/) Hibernate
+- [<img src="imagem\java.jpg" height=40px>](https://www.oracle.com/br/Java/) JAVA
+- [<img src="imagem\mysql.png" height=40px>](https://www.mysql.com//) MySQL
+- [<img src="imagem\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
+- [<img src="imagem\hibernate.png" height=40px>](https://hibernate.org/) Hibernate
 
 # Sprints anteriores
 - [Sprint 1: Backend + BD para iniciar o desenvolvimento + Documentação](https://github.com/JohnnyHTK/projetoweb)
