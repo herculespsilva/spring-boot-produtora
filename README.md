@@ -28,7 +28,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 ### 1 - Instale as dependências do projeto
 > mvn clean package
 ### 2 - Iniciar a aplicação
-> mvn tomcat7:run
+> mvn springboot:run
 ### 3- Rota padrão
 > localhost:8080/projetoweb
 ### 4 - Usuário administrador
