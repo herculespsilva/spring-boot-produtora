@@ -16,12 +16,12 @@
 - [Links](#links)
 
 ## ✍️ Autores:  <a name = "authors"></a>
-- <img src="imagem\linkedln.png" height=15px> [Carlos Henrique Monteiro Neto ](https://www.linkedin.com/in/carlos-henrique-monteiro-neto-b62a0413a/) - Full Stack Development
-- <img src="imagem\linkedln.png" height=15px> [Daniel Willians Ignacio de Souza](https://www.linkedin.com/in/danielwisouza/) - Product Owner/Full Stack Development
-- <img src="imagem\linkedln.png" height=15px> [Hercules Pereira da Silva](https://www.linkedin.com/in/hercules-pereira-03189711a/) - Scrum Master/Full Stack Development
-- <img src="imagem\linkedln.png" height=15px> [Lucas Campioni Rodrigues Porto](https://www.linkedin.com/in/lucascampioni/) - Full Stack Development
-- <img src="imagem\linkedln.png" height=15px> [Jonathan Moreno Martins]() - Full Stack Development
-- <img src="imagem\linkedln.png" height=15px> [Victor Cardial De Menezes Pereira]() - Full Stack Development
+- <img src="imagem\linkedln.png" height=15px> [Carlos Henrique Monteiro Neto ](https://www.linkedin.com/in/carlos-henrique-monteiro-neto-b62a0413a/) 
+- <img src="imagem\linkedln.png" height=15px> [Daniel Willians Ignacio de Souza](https://www.linkedin.com/in/danielwisouza/)
+- <img src="imagem\linkedln.png" height=15px> [Hercules Pereira da Silva](https://www.linkedin.com/in/hercules-pereira-03189711a/) 
+- <img src="imagem\linkedln.png" height=15px> [Lucas Campioni Rodrigues Porto](https://www.linkedin.com/in/lucascampioni/) 
+- <img src="imagem\linkedln.png" height=15px> [Jonathan Moreno Martins](https://www.linkedin.com/in/jonathanmmartins/) 
+- <img src="imagem\linkedln.png" height=15px> [Victor Cardial De Menezes Pereira]() 
 
 ## 🕵🏼 Sobre <a name = "about"></a>
 
@@ -88,14 +88,16 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Controle de estado com Vuex
 - Tratamento de erro em requisições (axios)
 
-## Sprints 5 anteriores - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
+## Sprints 5 - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
 - Automatização de integração de testes
 
-## Sprints 6 anteriores - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
+## Sprints 6 - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
 - Conclusão da documentação
 - Criação do vídeo explicando o projeto
 
 # 💾 Links <a name = "links"></a>
+
+- 
 
 
