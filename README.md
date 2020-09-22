@@ -60,7 +60,7 @@ User: admin Senha: 123
 Para a execução do projeto, é necessaria a instalação do [Apache Maven](#tecnologias-utilizadas), [MySql](#tecnologias-utilizadas) e [JAVA](#tecnologias-utilizadas).
 
 # 📊 Planejamento <a name = "planejamento"></a>
-## Sprints 1 
+## Sprints 1 - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/1entrega.md)
 - Levantamento de requisitos, e Criação do DER
 - Inicio da modelagem do banco de dados
 - Refatoração da aplicação
@@ -68,7 +68,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Mudanças no banco de dados
 - wireframes das paginas
 
-## Sprints 2
+## Sprints 2 - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/2entrega.md)
 - REST com Spring
 - Controllers e Métodos de acesso (get, post, put e delete);
 - Formatação de JSON. CORS
@@ -78,20 +78,20 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Gerenciador de logs do servidor
 - Pesquisa Tecnologica agregadora Cerberon
 
-## Sprints 3
+## Sprints 3 - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Softaware de Monitoramento
 - Segurança por token com JWT
 - Utilização das normas da LGPD
 
-## Sprints 4
+## Sprints 4 - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
 - Criação de front-end em Vue.js
 - Controle de estado com Vuex
 - Tratamento de erro em requisições (axios)
 
-## Sprints 5 anteriores
+## Sprints 5 anteriores - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
 - Automatização de integração de testes
 
-## Sprints 6 anteriores
+## Sprints 6 anteriores - [Documetação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
 - Conclusão da documentação
 - Criação do vídeo explicando o projeto
