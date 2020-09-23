@@ -79,7 +79,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Pesquisa Tecnologica agregadora Cerberon
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
-- Softaware de Monitoramento
+- Software de monitoramento
 - Segurança por token com JWT
 - Utilização das normas da LGPD
 
