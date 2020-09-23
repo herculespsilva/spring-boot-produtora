@@ -47,7 +47,7 @@ mvn clean package
 ```
 #### 2 - Iniciar a aplicação
 ```
- mvn springboot:run
+ mvn spring-boot:run
 ```
 #### 3- Rota padrão
 ```
@@ -77,9 +77,10 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Implementação de Jenkins
 - Gerenciador de logs do servidor
 - Pesquisa Tecnologica agregadora Cerberon
+- Gerenciamento de configuração Puppet 
+- Software de monitoramento
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
-- Software de monitoramento
 - Segurança por token com JWT
 - Utilização das normas da LGPD
 
@@ -97,7 +98,5 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Criação do vídeo explicando o projeto
 
 # 💾 Links <a name = "links"></a>
-
-- 
 
 
