@@ -13,4 +13,6 @@ public interface SegurancaService {
     public List<Filme> buscarTodosFilmes();
 
     public Filme buscarFilmeId(Long id);
+
+    public void deleteUsuario(Long id);
 }

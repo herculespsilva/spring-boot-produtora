@@ -13,6 +13,10 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import br.gov.sp.fatec.springbootprodutora.controller.View;
+
 @Entity
 @Table(name = "USR_USUARIO")
 public class Usuario {
@@ -21,13 +25,15 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "USR_ID")
     private Long id;
-    
+
+    @JsonView(View.UsuarioResumo.class)
 	@Column(name = "USR_NOME", unique = true, length = 20, nullable = false)
     private String nome;
     
 	@Column(name = "USR_SENHA", length = 50, nullable = false)
     private String senha;
 
+    @JsonView(View.UsuarioResumo.class)
 	@ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "UAU_USUARIO_AUTORIZACAO",  
                 joinColumns = { @JoinColumn(name = "USR_ID") }, 

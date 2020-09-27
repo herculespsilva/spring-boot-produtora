@@ -88,12 +88,18 @@ public class SegurancaServiceImpl implements SegurancaService {
         return filmeRepo.findAll();
     }
 
+    @Override
     public Filme buscarFilmeId(Long id){
         Optional<Filme> filmeOp= filmeRepo.findById(id);
         if(filmeOp.isPresent()){
             return filmeOp.get();
         }
         throw new RuntimeException("Usuario não encontrado!");
+    }
+
+    
+    public void deleteUsuario(Long id){
+        filmeRepo.deleteById(id);
     }
 
 

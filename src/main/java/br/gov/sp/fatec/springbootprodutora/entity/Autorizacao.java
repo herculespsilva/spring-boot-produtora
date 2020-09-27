@@ -11,16 +11,23 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import br.gov.sp.fatec.springbootprodutora.controller.View;
+
 @Entity
 @Table(name = "AUT_AUTORIZACAO")
 public class Autorizacao {
+    
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name = "AUT_ID")
     private Long id;
 
+    @JsonView(View.UsuarioResumo.class)
     @Column(name = "AUT_NOME", unique=true, length = 20, nullable = false)
     private String nome;
+    
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "autorizacoes")
     private Set<Usuario> usuarios;
