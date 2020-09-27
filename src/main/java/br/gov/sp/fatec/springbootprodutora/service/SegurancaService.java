@@ -12,5 +12,5 @@ public interface SegurancaService {
 
     public List<Filme> buscarTodosFilmes();
 
-    //public Filme buscarFilmePorId(Long id);
+    public Filme buscarFilmeId(Long id);
 }

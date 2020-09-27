@@ -25,10 +25,10 @@ public class FilmeController {
     public List<Filme> buscarTodos(){
         return segurancaService.buscarTodosFilmes();        
     }
-
+    
     @GetMapping(value="/{id}")
     public Filme buscarPorID(@PathVariable("id") Long id){
-        return segurancaService.buscarTodosFilmes();        
+        return segurancaService.buscarFilmeId(id);
     }
 
     
