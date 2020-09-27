@@ -1,6 +1,7 @@
 package br.gov.sp.fatec.springbootprodutora.service;
 
 import java.util.HashSet;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,7 @@ public class SegurancaServiceImpl implements SegurancaService {
     private UsuarioRepository usuarioRepo;
 
     @Autowired
-    private FilmeRepository fimeRepo;
+    private FilmeRepository filmeRepo;
 
     @Autowired
     private DiretorRepository diretorRepo;
@@ -75,9 +76,25 @@ public class SegurancaServiceImpl implements SegurancaService {
             filme.getPessoas().add(ator);
             filme.getPessoas().add(duble);
             
-            fimeRepo.save(filme);
+            filmeRepo.save(filme);
 
             return filme;
     }
-    
+
+    @Override
+    public List<Filme> buscarTodosFilmes(){
+        return filmeRepo.findAll();
+    }
+
+    @Override
+    public Filme buscarFilmePorId(Long id){
+        Optional<Filme> filmeOp= filmeRepo.findById(id);
+        if(filmeOp.isPresent()){
+            return filmeOp.get();
+        }
+        throw new RuntimeExcepetion("Filme não encontrado!");
+    }
+
+
+
 }

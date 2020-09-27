@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 
 public interface FilmeRepository extends JpaRepository<Filme, Long>{
+
     public Filme findByNome(String nome);
 
     public List<Filme> findByDiretorNome(String nome);
