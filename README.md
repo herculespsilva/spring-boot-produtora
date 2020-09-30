@@ -69,16 +69,16 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - wireframes das paginas
 
 ## Sprints 2 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/2entrega.md)
-- REST com Spring *(Back-end)
+- REST com Spring *(Back-end)*
 - Controllers e Métodos de acesso (get, post, put e delete) *(Back-end)
-- Formatação de JSON. CORS *(Back-end)
+- Formatação de JSON. CORS *(Back-end)*
 - Criação de controllers responsaveis pelo login e autenticação *(Back-end)
-- Mudanças no banco de dados *(Back-end)
-- Implementação de Jenkins *(DevOps)
-- Gerenciador de logs do servidor *(DevOps)
-- Pesquisa Tecnologica agregadora Cerberon *(DevOps)
-- Gerenciamento de configuração Puppet *(DevOps)
-- Software de monitoramento *(DevOps)
+- Mudanças no banco de dados *(Back-end)*
+- Implementação de Jenkins *(DevOps)*
+- Gerenciador de logs do servidor *(DevOps)*
+- Cerberon *(DevOps)*
+- Gerenciamento de configuração Puppet *(DevOps)*
+- Software de monitoramento *(DevOps)*
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Segurança por token com JWT
