@@ -10,7 +10,7 @@
                                                                    ("Cairo Head","45516724899","A","Musica"),
                                                                    ("Tyler Briggs","38314493399","A","Musica"),
                                                                    ("Clark Knox","47725317999","A","Musica"),
-                                                                   ("Aladdin Irwin","48361232399","A","Musica");
+                                                                   ("Aladdin Irwin","48361232399","A","Musica"),
                                                                    ("Abdul Mccray","39774555799","A","Teatro"),
                                                                    ("Kareem Hyde","74229628099","A","Teatro"),
                                                                    ("Beck Berg","43302315599","A","Teatro"),
