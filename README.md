@@ -76,8 +76,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Mudanças no banco de dados *(Back-end)*
 - Implementação de Jenkins *(DevOps)*
 - Gerenciador de logs do servidor *(DevOps)*
-- Cerberon *(DevOps)*
-- Gerenciamento de configuração Puppet *(DevOps)*
+- Pesquisa sobre plataforma Cerberon *(Pesquisa)*
 - Software de monitoramento -Grafana *(DevOps)*
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
