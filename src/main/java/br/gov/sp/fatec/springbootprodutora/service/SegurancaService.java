@@ -14,5 +14,5 @@ public interface SegurancaService {
 
     public Filme buscarFilmeId(Long id);
 
-    public void deleteUsuario(Long id);
+    public Object deleteUsuario(Long id);
 }
