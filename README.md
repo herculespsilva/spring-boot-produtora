@@ -70,9 +70,9 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 
 ## Sprints 2 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/2entrega.md)
 - REST com Spring *(Back-end)*
-- Controllers e Métodos de acesso (get, post, put e delete) *(Back-end)
+- Controllers e Métodos de acesso (get, post, put e delete) *(Back-end)*
 - Formatação de JSON. CORS *(Back-end)*
-- Criação de controllers responsaveis pelo login e autenticação *(Back-end)
+- Criação de controllers responsaveis pelo login e autenticação *(Back-end)*
 - Mudanças no banco de dados *(Back-end)*
 - Implementação de Jenkins *(DevOps)*
 - Gerenciador de logs do servidor *(DevOps)*
