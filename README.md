@@ -78,7 +78,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Gerenciador de logs do servidor *(DevOps)*
 - Cerberon *(DevOps)*
 - Gerenciamento de configuração Puppet *(DevOps)*
-- Software de monitoramento *(DevOps)*
+- Software de monitoramento -Grafana *(DevOps)*
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Segurança por token com JWT
