@@ -51,7 +51,7 @@ mvn clean package
 ```
 #### 3- Rota padrão
 ```
-localhost:8080/projetoweb
+localhost:8080/spring-app
 ```
 #### 4 - Usuário administrador
 ```
