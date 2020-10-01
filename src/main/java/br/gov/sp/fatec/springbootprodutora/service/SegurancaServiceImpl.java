@@ -107,7 +107,27 @@ public class SegurancaServiceImpl implements SegurancaService {
         }
     }
 
+    @Transactional
+    public Usuario updateUsuario(Long id, String nome, String senha, String autorizacao) {
 
+        Autorizacao aut = autoRepo.findByNome(autorizacao);
+        if(aut == null) {
+            aut = new Autorizacao();
+            aut.setNome(autorizacao);
+            autoRepo.save(aut);
+        }
+
+        return usuarioRepo.findById(id)
+           .map(user -> {
+               user.setNome(nome);
+               user.setSenha(senha);
+               user.setAutorizacoes(new HashSet<Autorizacao>());
+               Usuario updated = usuarioRepo.save(user);
+
+               return updated;
+           }).orElse(null);
+
+        }
 
 
 

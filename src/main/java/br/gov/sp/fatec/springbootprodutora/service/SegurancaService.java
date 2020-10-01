@@ -15,4 +15,6 @@ public interface SegurancaService {
     public Filme buscarFilmeId(Long id);
 
     public Object deleteUsuario(Long id);
+
+    public Usuario updateUsuario(Long id, String nome, String senha, String autorizacao);
 }
