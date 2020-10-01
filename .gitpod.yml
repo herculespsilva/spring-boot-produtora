@@ -1,4 +1,4 @@
 ports:
   - port: 8080
-  - init: mysql < DDL.sql
+  - init: mysql < DDL.sql && mysql < DML.sql
 image: gitpod/workspace-mysql

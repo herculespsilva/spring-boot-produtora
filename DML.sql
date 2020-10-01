@@ -1,3 +1,5 @@
+use produtora;
+
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","92427130099","T"), 
                                                           ("Hop Bowman","29949872899","T"),
                                                           ("Preston Bailey","18252066499","T"), 
