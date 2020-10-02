@@ -38,7 +38,7 @@ public interface SegurancaService {
 
     public Diretor buscarDiretorPorNome(String nome);
 
+    public List<Diretor> buscarDiretorPorLetra(String nome);
 
 
-    
 }

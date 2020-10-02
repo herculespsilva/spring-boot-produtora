@@ -44,4 +44,11 @@ public class DiretorController {
         return segurancaService.buscarDiretorPorNome(nome);
     }
 
+    @JsonView(View.Diretor.class)
+    @GetMapping (value = "/letra/{nome}")
+    public List<Diretor> buscaDiretorPorLetra(@PathVariable("nome")  String nome)
+    {
+        return segurancaService.buscarDiretorPorLetra(nome);
+    }
+    
 }

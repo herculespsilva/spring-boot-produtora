@@ -202,4 +202,15 @@ public class SegurancaServiceImpl implements SegurancaService {
         throw new RegistroNaoEncontradoException("diretor nao encontrado!");
     }
 
+    
+    @Override
+    public List<Diretor> buscarDiretorPorLetra(String nome){
+         List<Diretor> diretor = diretorRepo.findByNomeContainsIgnoreCase(nome);
+        if(diretor!=null)
+        {
+            return diretor;
+        }
+        throw new RegistroNaoEncontradoException("diretor nao encontrado!");
+    }
+
 }
