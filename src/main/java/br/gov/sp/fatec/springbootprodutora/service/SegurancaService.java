@@ -6,15 +6,28 @@ import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 
 public interface SegurancaService {
+    //Usuario
+    public List<Usuario>buscarTodosUsuarios();
+
+    public Usuario buscarUsuarioPorId(Long id);
+
+    public Usuario buscarUsuarioPorNome(String nome);
+
     public Usuario criaUsuario(String nome, String senha, String autorizacao);
-
-    public Filme criaFilme(String nome, Long ano, Float duracao, String descricao, String diretor, String ator, String duble);
-
-    public List<Filme> buscarTodosFilmes();
-
-    public Filme buscarFilmeId(Long id);
 
     public Object deleteUsuario(Long id);
 
     public Usuario updateUsuario(Long id, String nome, String senha, String autorizacao);
+    
+    //Filme
+    public List<Filme> buscarTodosFilmes();
+
+    public Filme buscarFilmePorId(Long id);
+
+    public Filme buscarFilmePorNome(String nome);
+
+    public Filme criaFilme(String nome, Long ano, Float duracao, String descricao, String diretor, String ator, String duble);
+
+
+    
 }

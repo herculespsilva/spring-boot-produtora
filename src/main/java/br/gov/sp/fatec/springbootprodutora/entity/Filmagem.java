@@ -14,27 +14,36 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import br.gov.sp.fatec.springbootprodutora.controller.View;
+
 @Entity
 @Table(name = "fmg_filmagem")
 @Inheritance(strategy = InheritanceType.JOINED)
 @AttributeOverride(name = "id", column = @Column(name = "fmg_id"))
 
 public class Filmagem extends Main {
+    @JsonView(View.Filmagem.class)
 	@Column (name="fmg_nome", length = 50)
 	private String nome;
-	
+    
+    @JsonView(View.Filmagem.class)
 	@Column (name="fmg_ano")
 	private Long ano;
-	
+    
+    @JsonView(View.Filmagem.class)
 	@Column (name="fmg_duracao")
 	private float duracao;
     
+    @JsonView(View.Filmagem.class)
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "atu_atuacao",
 			joinColumns = { @JoinColumn(name = "fmg_id") },
 			inverseJoinColumns = { @JoinColumn(name = "pes_id") })
 	private Set<Pessoa> pessoas;
     
+    @JsonView(View.Filmagem.class)
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "diretor")
 	private Diretor diretor;

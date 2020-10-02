@@ -16,6 +16,7 @@ import br.gov.sp.fatec.springbootprodutora.entity.Duble;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Pessoa;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
+import br.gov.sp.fatec.springbootprodutora.exception.RegistroNaoEncontradoException;
 import br.gov.sp.fatec.springbootprodutora.repository.AtorRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.DiretorRepository;
@@ -44,6 +45,34 @@ public class SegurancaServiceImpl implements SegurancaService {
     @Autowired
     private DubleRepository dubleRepo;
 
+    @Override
+    public List<Usuario>buscarTodosUsuarios()
+    {
+        return usuarioRepo.findAll();
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorId(Long id)
+    {
+        Optional<Usuario> usuarioOp= usuarioRepo.findById(id);
+        if(usuarioOp.isPresent())
+        {
+            return usuarioOp.get();
+        }
+         throw new RegistroNaoEncontradoException("usuario nao encontrado!");
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorNome(String nome)
+    {
+        Usuario usuario = usuarioRepo.findByNome(nome);
+        if(usuario!=null)
+        {
+            return usuario;
+        }
+        throw new RegistroNaoEncontradoException("usuario nao encontrado!");
+    }
+
     @Transactional
     public Usuario criaUsuario(String nome, String senha, String autorizacao) {
         Autorizacao aut = autoRepo.findByNome(autorizacao);
@@ -60,51 +89,6 @@ public class SegurancaServiceImpl implements SegurancaService {
         usuarioRepo.save(usuario);
 
         return usuario;
-    }
-
-    @Transactional
-    public Filme criaFilme(String nome, Long ano, Float duracao, String descricao, String nomeDiretor, String atorNome, String dubleNome) {
-            Diretor diretor = diretorRepo.findByNome(nomeDiretor);
-            Ator ator = atorRepo.findByNome(atorNome);
-            Duble duble = dubleRepo.findByNome(dubleNome);
-
-            Filme filme = new Filme();
-            filme.setNome(nome);
-            filme.setAno(ano);
-            filme.setDuracao(duracao);
-            filme.setDescricao(descricao);
-            filme.setDiretor(diretor);
-            filme.setPessoas(new HashSet<Pessoa>());
-            filme.getPessoas().add(ator);
-            filme.getPessoas().add(duble);
-            
-            filmeRepo.save(filme);
-
-            return filme;
-    }
-
-    @Override
-    public List<Filme> buscarTodosFilmes(){
-        return filmeRepo.findAll();
-    }
-
-    @Override
-    public Filme buscarFilmeId(Long id){
-        Optional<Filme> filmeOp= filmeRepo.findById(id);
-        if(filmeOp.isPresent()){
-            return filmeOp.get();
-        }
-        throw new RuntimeException("Usuario não encontrado!");
-    }
-
-    
-    public Optional<Usuario> deleteUsuario(Long id) {
-        usuarioRepo.deleteById(id);
-        if(usuarioRepo.findById(id)!=null){
-            return usuarioRepo.findById(id);
-        }else{
-            return usuarioRepo.findById(id);
-        }
     }
 
     @Transactional
@@ -125,10 +109,65 @@ public class SegurancaServiceImpl implements SegurancaService {
                Usuario updated = usuarioRepo.save(user);
 
                return updated;
-           }).orElse(null);
+        }).orElse(null);
+    }
 
+    public Optional<Usuario> deleteUsuario(Long id) {
+        usuarioRepo.deleteById(id);
+        if(usuarioRepo.findById(id)!=null){
+            return usuarioRepo.findById(id);
+        }else{
+            return usuarioRepo.findById(id);
         }
+    }
 
+    //Filme ----------------------------------------------------------------------------------------------------
+    @Override
+    public List<Filme> buscarTodosFilmes(){
+        return filmeRepo.findAll();
+    }
 
+    @Override
+    public Filme buscarFilmePorId(Long id)
+    {
+        Optional<Filme> filmeOp= filmeRepo.findById(id);
+        if(filmeOp.isPresent())
+        {
+            return filmeOp.get();
+        }
+         throw new RegistroNaoEncontradoException("filme nao encontrado!");
+    }
 
+    @Override
+    public Filme buscarFilmePorNome(String nome)
+    {
+        Filme filme = filmeRepo.findByNome(nome);
+        if(filme!=null)
+        {
+            return filme;
+        }
+        throw new RegistroNaoEncontradoException("filme nao encontrado!");
+    }
+
+    @Transactional
+    public Filme criaFilme(String nome, Long ano, Float duracao, String descricao, String nomeDiretor, String atorNome, String dubleNome) {
+            
+            Diretor diretor = diretorRepo.findByNome(nomeDiretor);
+            Ator ator = atorRepo.findByNome(atorNome);
+            Duble duble = dubleRepo.findByNome(dubleNome);
+
+            Filme filme = new Filme();
+            filme.setNome(nome);
+            filme.setAno(ano);
+            filme.setDuracao(duracao);
+            filme.setDescricao(descricao);
+            filme.setDiretor(diretor);
+            filme.setPessoas(new HashSet<Pessoa>());
+            filme.getPessoas().add(ator);
+            filme.getPessoas().add(duble);
+            
+            filmeRepo.save(filme);
+
+            return filme;
+    }
 }

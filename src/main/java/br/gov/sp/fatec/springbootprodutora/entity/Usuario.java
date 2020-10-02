@@ -20,7 +20,8 @@ import br.gov.sp.fatec.springbootprodutora.controller.View;
 @Entity
 @Table(name = "USR_USUARIO")
 public class Usuario {
-        
+    
+    @JsonView(View.UsuarioCompleto.class)
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "USR_ID")
