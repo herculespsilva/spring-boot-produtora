@@ -253,4 +253,44 @@ public class SegurancaServiceImpl implements SegurancaService {
         throw new RegistroNaoEncontradoException("ator nao encontrado!");
     }
 
+    //Duble----------------------------------------------------------------------------------
+
+    @Override
+    public List<Duble> buscarTodosDubles(){
+        return dubleRepo.findAll();
+    }
+
+    @Override
+    public Duble buscarDublePorId(Long id)
+    {
+        Optional<Duble> dubleOp= dubleRepo.findById(id);
+        if(dubleOp.isPresent())
+        {
+            return dubleOp.get();
+        }
+         throw new RegistroNaoEncontradoException("duble nao encontrado!");
+    }
+
+    @Override
+    public Duble buscarDublePorNome(String nome)
+    {
+        Duble duble = dubleRepo.findByNome(nome);
+        if(duble!=null)
+        {
+            return duble;
+        }
+        throw new RegistroNaoEncontradoException("duble nao encontrado!");
+    }
+
+    
+    @Override
+    public List<Duble> buscarDublePorLetra(String nome){
+         List<Duble> duble = dubleRepo.findByNomeContainsIgnoreCase(nome);
+        if(duble!=null)
+        {
+            return duble;
+        }
+        throw new RegistroNaoEncontradoException("duble nao encontrado!");
+    }
+
 }
