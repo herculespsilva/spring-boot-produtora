@@ -26,10 +26,10 @@ use produtora;
                                                                             ("Kennedy Franco","33832283899","D","Defesa Pessoal"),
                                                                             ("Flynn May","93250208199","D","Defesa Pessoal"),
                                                                             ("Omar Gutierrez","00645656299","D","Defesa Pessoal");
-    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("o auto da compadecida","1919-10-09",4,1),
-                                                                           ("velozes e furiosos 1","2121-02-25",3,2),
-                                                                           ("velozes e furiosos 3","2020-05-11",2,4),
-                                                                           ("velozes e furiosos 4","2121-09-05",4,5);
+    INSERT INTO fmg_filmagem (fmg_nome,fmg_ano,fmg_duracao,diretor) VALUES ("o auto da compadecida","1919",4,1),
+                                                                           ("velozes e furiosos 1","2121",3,2),
+                                                                           ("velozes e furiosos 3","2020",2,4),
+                                                                           ("velozes e furiosos 4","2121",4,5);
     INSERT INTO nov_novela (fmg_id,nov_capitulo,nov_desc_cap) VALUES (1,11,"tomada 1 - matar"),
                                                                      (2,12,"tomada 2 - treinar o dragão"),
                                                                      (3,9,"tomada 3 - beijo"),
