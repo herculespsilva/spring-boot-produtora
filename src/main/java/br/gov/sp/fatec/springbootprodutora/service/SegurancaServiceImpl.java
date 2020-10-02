@@ -170,4 +170,14 @@ public class SegurancaServiceImpl implements SegurancaService {
 
             return filme;
     }
+
+
+
+    //Diretor---------------------------------------------------------------------------------------------
+
+    @Override
+    public List<Diretor> buscarTodosDiretores(){
+        return diretorRepo.findAll();
+    }
+
 }

@@ -11,5 +11,9 @@ public class View {
     public static class Filmagem{}
 
     public static class Filme extends Filmagem{}
+
+    public static class Pessoa {}
+
+    public static class Diretor extends Pessoa {}
     
 }

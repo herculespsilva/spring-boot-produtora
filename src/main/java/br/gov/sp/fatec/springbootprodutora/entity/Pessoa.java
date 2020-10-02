@@ -14,7 +14,10 @@ import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.CascadeType;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+/*import com.fasterxml.jackson.annotation.JsonIgnore;*/
+import com.fasterxml.jackson.annotation.JsonView;
+
+import br.gov.sp.fatec.springbootprodutora.controller.View;
 
 @Entity
 @Table(name = "pes_pessoa")
@@ -22,13 +25,16 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @DiscriminatorColumn(name = "tipo", length = 1, discriminatorType = DiscriminatorType.STRING)
 @AttributeOverride(name = "id", column = @Column(name = "pes_id"))
 public class Pessoa extends Main{
+    @JsonView(View.Pessoa.class)
     @Column(name = "pes_nome")
 	private String nome;
 
+    @JsonView(View.Pessoa.class)
 	@Column(name = "pes_cpf")
     private Long cpf;
     
-    @JsonIgnore
+    /*@JsonIgnore*/
+    @JsonView(View.Pessoa.class)
 	@ManyToMany(fetch = FetchType.LAZY, mappedBy = "pessoas", cascade = CascadeType.REMOVE)
 	private Set<Filmagem> filmagemParticipadas;
 

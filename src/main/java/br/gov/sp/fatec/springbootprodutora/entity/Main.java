@@ -16,7 +16,8 @@ import org.slf4j.LoggerFactory;*/
 public class Main {
         //private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
-    @JsonView(View.Filme.class)
+    
+    @JsonView({View.Filme.class,View.Pessoa.class})
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
