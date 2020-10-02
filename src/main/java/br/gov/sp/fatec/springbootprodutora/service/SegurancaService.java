@@ -2,6 +2,7 @@ package br.gov.sp.fatec.springbootprodutora.service;
 
 import java.util.List;
 
+import br.gov.sp.fatec.springbootprodutora.entity.Ator;
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
@@ -40,5 +41,17 @@ public interface SegurancaService {
 
     public List<Diretor> buscarDiretorPorLetra(String nome);
 
+    //Ator
 
+    public List<Ator> buscarTodosAtores(); 
+
+    public Ator buscarAtorPorId(Long id);
+
+    public Ator buscarAtorPorNome(String nome);
+
+    public List<Ator> buscarAtorPorLetra(String nome);
+
+    //Duble
+
+    //Novela
 }

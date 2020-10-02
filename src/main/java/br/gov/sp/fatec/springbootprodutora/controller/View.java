@@ -12,10 +12,16 @@ public class View {
 
     public static class Filme extends Filmagem{}
 
+    public static class Novela extends Filmagem{}
+
     public static class Pessoa {}
 
     public static class PessoaCompleta extends Pessoa {}
 
     public static class Diretor extends PessoaCompleta {}
+
+    public static class Ator extends PessoaCompleta {}
+
+    public static class Duble extends PessoaCompleta {}
  
 }

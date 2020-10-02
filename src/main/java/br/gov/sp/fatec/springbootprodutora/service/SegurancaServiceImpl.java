@@ -213,4 +213,44 @@ public class SegurancaServiceImpl implements SegurancaService {
         throw new RegistroNaoEncontradoException("diretor nao encontrado!");
     }
 
+    //Ator ---------------------------------------------------------------------------------------------------
+
+    @Override
+    public List<Ator> buscarTodosAtores(){
+        return atorRepo.findAll();
+    }
+
+    @Override
+    public Ator buscarAtorPorId(Long id)
+    {
+        Optional<Ator> atorOp= atorRepo.findById(id);
+        if(atorOp.isPresent())
+        {
+            return atorOp.get();
+        }
+         throw new RegistroNaoEncontradoException("ator nao encontrado!");
+    }
+
+    @Override
+    public Ator buscarAtorPorNome(String nome)
+    {
+        Ator ator = atorRepo.findByNome(nome);
+        if(ator!=null)
+        {
+            return ator;
+        }
+        throw new RegistroNaoEncontradoException("ator nao encontrado!");
+    }
+
+    
+    @Override
+    public List<Ator> buscarAtorPorLetra(String nome){
+         List<Ator> ator = atorRepo.findByNomeContainsIgnoreCase(nome);
+        if(ator!=null)
+        {
+            return ator;
+        }
+        throw new RegistroNaoEncontradoException("ator nao encontrado!");
+    }
+
 }
