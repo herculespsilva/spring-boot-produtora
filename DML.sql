@@ -1,9 +1,6 @@
 use produtora;
 
-    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Owen Simpson","16725546299","A","Musica"), 
-                                                                   ("Cairo Head","45516724899","A","Musica"),
-                                                                   ("Tyler Briggs","38314493399","A","Musica"),
-                                                                   ("Clark Knox","47725317999","A","Musica"),
+    INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo,atr_fama) VALUES ("Tyler Briggs","38314493399","A","Musica"),
                                                                    ("Aladdin Irwin","48361232399","A","Musica"),
                                                                    ("Abdul Mccray","39774555799","A","Teatro"),
                                                                    ("Kareem Hyde","74229628099","A","Teatro"),
