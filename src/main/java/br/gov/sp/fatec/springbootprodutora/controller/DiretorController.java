@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
 import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
 
+/*Anotações breves... alguns métodos precisam ser melhorados junto com as view para que seja exibido os dados
+de filmagem participadas e dirigidas */
+
 @RestController
 @RequestMapping(value = "/diretor")
 @CrossOrigin
@@ -38,7 +41,7 @@ public class DiretorController {
     }
 
     @JsonView(View.Diretor.class)
-    @GetMapping (value = "nome/{nome}")
+    @GetMapping (value = "/nome/{nome}")
     public Diretor buscarPorNome(@PathVariable("nome")  String nome)
     {
         return segurancaService.buscarDiretorPorNome(nome);
