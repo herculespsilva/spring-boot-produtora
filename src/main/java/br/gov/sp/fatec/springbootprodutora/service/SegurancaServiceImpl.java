@@ -180,4 +180,26 @@ public class SegurancaServiceImpl implements SegurancaService {
         return diretorRepo.findAll();
     }
 
+    @Override
+    public Diretor buscarDiretorPorId(Long id)
+    {
+        Optional<Diretor> diretorOp= diretorRepo.findById(id);
+        if(diretorOp.isPresent())
+        {
+            return diretorOp.get();
+        }
+         throw new RegistroNaoEncontradoException("diretor nao encontrado!");
+    }
+
+    @Override
+    public Diretor buscarDiretorPorNome(String nome)
+    {
+        Diretor diretor = diretorRepo.findByNome(nome);
+        if(diretor!=null)
+        {
+            return diretor;
+        }
+        throw new RegistroNaoEncontradoException("diretor nao encontrado!");
+    }
+
 }

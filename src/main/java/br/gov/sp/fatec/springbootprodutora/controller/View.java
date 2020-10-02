@@ -14,6 +14,8 @@ public class View {
 
     public static class Pessoa {}
 
-    public static class Diretor extends Pessoa {}
+    public static class PessoaCompleta extends Pessoa {}
+
+    public static class Diretor extends PessoaCompleta {}
     
 }

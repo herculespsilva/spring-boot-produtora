@@ -17,7 +17,7 @@ public class Main {
         //private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     
-    @JsonView({View.Filme.class,View.Pessoa.class})
+    @JsonView({View.Filme.class,View.PessoaCompleta.class})
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

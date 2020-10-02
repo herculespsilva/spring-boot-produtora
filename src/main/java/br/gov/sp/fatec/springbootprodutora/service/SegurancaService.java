@@ -34,4 +34,11 @@ public interface SegurancaService {
 
     public List<Diretor> buscarTodosDiretores(); 
 
+    public Diretor buscarDiretorPorId(Long id);
+
+    public Diretor buscarDiretorPorNome(String nome);
+
+
+
+    
 }
