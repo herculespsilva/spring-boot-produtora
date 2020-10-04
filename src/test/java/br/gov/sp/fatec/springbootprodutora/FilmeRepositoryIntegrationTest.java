@@ -1,7 +1,9 @@
 package br.gov.sp.fatec.springbootprodutora;
 
-
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.HashSet;
@@ -39,11 +41,17 @@ public class FilmeRepositoryIntegrationTest {
     @Autowired
     private DubleRepository dubleRepo;
 
+    private static final Logger logger = LoggerFactory.getLogger(FilmeRepositoryIntegrationTest.class);
+
+
         @Test
     void testaInsercaoFilme() {
         Diretor diretor = diretorRepo.findByNome("Hop Bowman");
+        logger.info("find diretor by name HOP BOWMAN", FilmeRepositoryIntegrationTest.class.getSimpleName());
         Ator ator = atorRepo.findByNome("Owen Simpson");
+        logger.info("find ator by name OWEN SIMPSON", FilmeRepositoryIntegrationTest.class.getSimpleName());
         Duble duble = dubleRepo.findByNome("Tyler Briggs");
+        logger.info("find duble by name TYLER BRIGGS", FilmeRepositoryIntegrationTest.class.getSimpleName());
 
 
         Filme filme = new Filme();

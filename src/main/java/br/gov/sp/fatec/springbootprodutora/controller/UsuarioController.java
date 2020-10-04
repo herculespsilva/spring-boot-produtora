@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -28,6 +30,8 @@ import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
 
 
 public class UsuarioController {
+
+    private static final Logger logger = LoggerFactory.getLogger(UsuarioController.class);
     
     @Autowired
     private SegurancaService segurancaService;
@@ -36,7 +40,9 @@ public class UsuarioController {
     @GetMapping
     public List<Usuario> buscarTodos()
     {
+        logger.info("Example log from {}", UsuarioController.class.getSimpleName());
         return segurancaService.buscarTodosUsuarios();
+
     }
 
     @JsonView(View.UsuarioCompleto.class)
