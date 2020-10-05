@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Duble;
-import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
+import br.gov.sp.fatec.springbootprodutora.service.ProdutoraServiceProvider;
 
 @RestController
 @RequestMapping(value = "/duble")
@@ -20,36 +20,33 @@ import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
 public class DubleController {
     
     @Autowired
-    private SegurancaService segurancaService;
+    private ProdutoraServiceProvider produtoraService;
 
     @JsonView(View.Duble.class)
     @GetMapping
     public List<Duble> buscarTodos()
     {
-        return segurancaService.buscarTodosDubles();
+        return produtoraService.buscarTodosDubles();
     }
 
     @JsonView(View.Duble.class)
     @GetMapping (value="/id/{id}")
     public Duble buscarPorId(@PathVariable("id") Long id)
     {
-        return segurancaService.buscarDublePorId(id);
+        return produtoraService.buscarDublePorId(id);
     }
 
     @JsonView(View.Duble.class)
     @GetMapping (value = "/nome/{nome}")
     public Duble buscarPorNome(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarDublePorNome(nome);
+        return produtoraService.buscarDublePorNome(nome);
     }
 
     @JsonView(View.Duble.class)
     @GetMapping (value = "/letra/{nome}")
     public List<Duble> buscaDublePorLetra(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarDublePorLetra(nome);
+        return produtoraService.buscarDublePorLetra(nome);
     }
-
-
-
 }

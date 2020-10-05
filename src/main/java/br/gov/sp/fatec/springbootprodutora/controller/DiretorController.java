@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
-import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
+import br.gov.sp.fatec.springbootprodutora.service.ProdutoraServiceProvider;
 
 /*Anotações breves... alguns métodos precisam ser melhorados junto com as view para que seja exibido os dados
 de filmagem participadas e dirigidas */
@@ -24,34 +24,33 @@ de filmagem participadas e dirigidas */
 public class DiretorController {
     
     @Autowired
-    private SegurancaService segurancaService;
+    private ProdutoraServiceProvider produtoraService;
 
     @JsonView(View.Diretor.class)
     @GetMapping
     public List<Diretor> buscarTodos()
     {
-        return segurancaService.buscarTodosDiretores();
+        return produtoraService.buscarTodosDiretores();
     }
 
     @JsonView(View.Diretor.class)
     @GetMapping (value="/id/{id}")
     public Diretor buscarPorId(@PathVariable("id") Long id)
     {
-        return segurancaService.buscarDiretorPorId(id);
+        return produtoraService.buscarDiretorPorId(id);
     }
 
     @JsonView(View.Diretor.class)
     @GetMapping (value = "/nome/{nome}")
     public Diretor buscarPorNome(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarDiretorPorNome(nome);
+        return produtoraService.buscarDiretorPorNome(nome);
     }
 
     @JsonView(View.Diretor.class)
     @GetMapping (value = "/letra/{nome}")
     public List<Diretor> buscaDiretorPorLetra(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarDiretorPorLetra(nome);
+        return produtoraService.buscarDiretorPorLetra(nome);
     }
-    
 }

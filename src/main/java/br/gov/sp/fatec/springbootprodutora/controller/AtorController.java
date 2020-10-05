@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Ator;
-import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
+import br.gov.sp.fatec.springbootprodutora.service.ProdutoraServiceProvider;
 
 @RestController
 @RequestMapping(value = "/ator")
@@ -20,35 +20,33 @@ import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
 public class AtorController {
     
     @Autowired
-    private SegurancaService segurancaService;
+    private ProdutoraServiceProvider produtoraService;
 
     @JsonView(View.Ator.class)
     @GetMapping
     public List<Ator> buscarTodos()
     {
-        return segurancaService.buscarTodosAtores();
+        return produtoraService.buscarTodosAtores();
     }
 
     @JsonView(View.Ator.class)
     @GetMapping (value="/id/{id}")
     public Ator buscarPorId(@PathVariable("id") Long id)
     {
-        return segurancaService.buscarAtorPorId(id);
+        return produtoraService.buscarAtorPorId(id);
     }
 
     @JsonView(View.Ator.class)
     @GetMapping (value = "/nome/{nome}")
     public Ator buscarPorNome(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarAtorPorNome(nome);
+        return produtoraService.buscarAtorPorNome(nome);
     }
 
     @JsonView(View.Ator.class)
     @GetMapping (value = "/letra/{nome}")
     public List<Ator> buscaAtorPorLetra(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarAtorPorLetra(nome);
+        return produtoraService.buscarAtorPorLetra(nome);
     }
-
-
 }

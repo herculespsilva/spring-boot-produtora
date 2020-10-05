@@ -96,7 +96,10 @@ create table atu_atuacao (
 
     INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),
                                                    (4, 1), 
+                                                   (5, 1),
                                                    (1, 2),
                                                    (2, 2), 
-                                                   (3, 2);
+                                                   (3, 2),
+                                                   (6, 2);
+
                                                    

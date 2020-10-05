@@ -13,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
-import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.DiretorRepository;
@@ -118,11 +117,11 @@ class SpringBootProdutoraApplicationTests {
     }
 
     // ------------------------------------------------------------------------------------------------------------------
-    @Test
+    /*@Test
     void testaServicoCriaFilme() {
          Filme filme = segService.criaFilme("Tropa de Elite", 2020l, 3.3f, "Filme do Brasil", "Luke Winters", "Cairo Head", "Clark Knox");
          assertNotNull(filme);
-    }    
+    }    */
 
     @Test
     void testaInsercaoDiretor() {

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
-import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
+import br.gov.sp.fatec.springbootprodutora.service.ProdutoraServiceProvider;
 
 @RestController
 @RequestMapping(value = "/filme")
@@ -27,31 +27,32 @@ import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
 public class FilmeController {
 
     @Autowired
-    private SegurancaService segurancaService;
+    private ProdutoraServiceProvider produtoraService;
 
+    @JsonView(View.Filme.class)
     @GetMapping
     public List<Filme> buscarTodos(){
-        return segurancaService.buscarTodosFilmes();        
+        return produtoraService.buscarTodosFilmes();        
     }
     
     @JsonView(View.Filme.class)
     @GetMapping(value="/id/{id}")
     public Filme buscarPorID(@PathVariable("id") Long id){ //public Filme buscarPorID(@RequestParam(value="id") Long id) <--- Outra forma de receber valores via GET mas chama na URL /id?id=valor
-        return segurancaService.buscarFilmePorId(id);
+        return produtoraService.buscarFilmePorId(id);
     }
 
     @JsonView(View.Filme.class)
     @GetMapping (value = "/nome/{nome}")
     public Filme buscarPorNome(@PathVariable("nome")  String nome)
     {
-        return segurancaService.buscarFilmePorNome(nome);
+        return produtoraService.buscarFilmePorNome(nome);
     }
 
     @PostMapping
     public ResponseEntity <Filme> cadastraNovoFilme(@RequestBody Filme filme,
         UriComponentsBuilder uriComponentsBuilder)
     {
-        filme = segurancaService.criaFilme(filme.getNome(), filme.getAno(), filme.getDuracao(), 
+        filme = produtoraService.criaFilme(filme.getNome(), filme.getAno(), filme.getDuracao(), 
                                             filme.getDescricao(), filme.getDiretor().getNome(), "Owen Simpson", "Tyler Briggs");
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.setLocation(
@@ -59,6 +60,4 @@ public class FilmeController {
                 "/filme/id/" + filme.getId()).build().toUri());      
         return new ResponseEntity<Filme>(filme,responseHeaders,HttpStatus.CREATED);
     }
-
-    
 }
