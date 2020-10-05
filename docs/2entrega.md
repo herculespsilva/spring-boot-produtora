@@ -18,7 +18,7 @@
 - [logfile] – retorna logs de aplicativos comuns
 - [loggers] – nos permite consultar e modificar o nível de log do nosso aplicativo
 - [metrics] – detalha as métricas de nosso aplicativo. Isso pode incluir métricas genéricas e personalizadas
-- [prometheu]s – retorna métricas como a anterior, mas formatada para funcionar com um servidor Prometheus
+- [prometheu] – retorna métricas como a anterior, mas formatada para funcionar com um servidor Prometheus
 - [scheduletasks] – fornece detalhes sobre todas as tarefas agendadas em nosso aplicativo
 - [sessions] – lista as sessões HTTP, pois estamos usando o Spring Session
 - [shutdown] – executa um desligamento normal do aplicativo */threaddump – despeja as informações de encadeamento da JVM subjacente
