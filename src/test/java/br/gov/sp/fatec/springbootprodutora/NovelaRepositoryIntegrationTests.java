@@ -23,7 +23,7 @@ import br.gov.sp.fatec.springbootprodutora.repository.NovelaRepository;
 @SpringBootTest
 @Transactional
 @Rollback
-public class NovelaRepositoryIntegrationTest {
+public class NovelaRepositoryIntegrationTests {
 
     @Autowired
     private NovelaRepository novelaRepo;

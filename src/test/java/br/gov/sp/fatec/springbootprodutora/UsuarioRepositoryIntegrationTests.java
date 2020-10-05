@@ -1,10 +1,10 @@
 package br.gov.sp.fatec.springbootprodutora;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.HashSet;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,19 +12,16 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
-import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 import br.gov.sp.fatec.springbootprodutora.repository.AutorizacaoRepository;
-import br.gov.sp.fatec.springbootprodutora.repository.DiretorRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.UsuarioRepository;
 import br.gov.sp.fatec.springbootprodutora.service.SegurancaService;
-
 
 @SpringBootTest
 @Transactional
 @Rollback
-class SpringBootProdutoraApplicationTests {
-
+public class UsuarioRepositoryIntegrationTests {
+    
     @Autowired
     private UsuarioRepository usuarioRepo;
     
@@ -34,10 +31,7 @@ class SpringBootProdutoraApplicationTests {
     @Autowired
     private SegurancaService segService;
 
-    @Autowired
-    private DiretorRepository diretorRepo;
-
-	@Test
+    @Test
 	void contextLoads() {
     }
     
@@ -114,22 +108,5 @@ class SpringBootProdutoraApplicationTests {
     void testaServicoCriaUsuario() {
          Usuario usuario = segService.criaUsuario("mineda", "SenhaF0rte", "ROLE_USUARIO");
          assertNotNull(usuario);
-    }
-
-    // ------------------------------------------------------------------------------------------------------------------
-    /*@Test
-    void testaServicoCriaFilme() {
-         Filme filme = segService.criaFilme("Tropa de Elite", 2020l, 3.3f, "Filme do Brasil", "Luke Winters", "Cairo Head", "Clark Knox");
-         assertNotNull(filme);
-    }    */
-
-    @Test
-    void testaInsercaoDiretor() {
-        Diretor diretor = new Diretor();
-        diretor.setNome("Luiz Fernando");
-        diretor.setCpf(46990126856l);
-        diretorRepo.save(diretor);
-
-        assertNotNull(diretor.getId());
     }
 }

@@ -12,18 +12,23 @@ import br.gov.sp.fatec.springbootprodutora.entity.Ator;
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
 import br.gov.sp.fatec.springbootprodutora.entity.Duble;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
+import br.gov.sp.fatec.springbootprodutora.entity.Novela;
 import br.gov.sp.fatec.springbootprodutora.entity.Pessoa;
 import br.gov.sp.fatec.springbootprodutora.exception.RegistroNaoEncontradoException;
 import br.gov.sp.fatec.springbootprodutora.repository.AtorRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.DiretorRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.DubleRepository;
 import br.gov.sp.fatec.springbootprodutora.repository.FilmeRepository;
+import br.gov.sp.fatec.springbootprodutora.repository.NovelaRepository;
 
 @Service("ProdutoraServiceProvider") 
 public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
 
     @Autowired
     private FilmeRepository filmeRepo;
+
+    @Autowired
+    private NovelaRepository novelaRepo;
 
     @Autowired
     private DiretorRepository diretorRepo;
@@ -83,6 +88,35 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
             filmeRepo.save(filme);
 
             return filme;
+    }
+
+    //Novela ----------------------------------------------------------------------------------------------------
+
+    @Override
+    public List<Novela> buscarTodasNovelas(){
+        return novelaRepo.findAll();
+    }
+
+    @Override
+    public Novela buscarNovelaPorId(Long id)
+    {
+        Optional<Novela> novelaOp= novelaRepo.findById(id);
+        if(novelaOp.isPresent())
+        {
+            return novelaOp.get();
+        }
+         throw new RegistroNaoEncontradoException("novela nao encontrada!");
+    }
+
+    @Override
+    public Novela buscarNovelaPorNome(String nome)
+    {
+        Novela novela = novelaRepo.findByNome(nome);
+        if(novela!=null)
+        {
+            return novela;
+        }
+        throw new RegistroNaoEncontradoException("novela nao encontrada!");
     }
 
     //Diretor---------------------------------------------------------------------------------------------

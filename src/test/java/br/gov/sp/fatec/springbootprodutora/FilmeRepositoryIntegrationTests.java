@@ -27,7 +27,7 @@ import br.gov.sp.fatec.springbootprodutora.repository.FilmeRepository;
 @SpringBootTest
 @Transactional
 @Rollback
-public class FilmeRepositoryIntegrationTest {
+public class FilmeRepositoryIntegrationTests {
 
      @Autowired
     private FilmeRepository filmeRepo;
@@ -41,17 +41,17 @@ public class FilmeRepositoryIntegrationTest {
     @Autowired
     private DubleRepository dubleRepo;
 
-    private static final Logger logger = LoggerFactory.getLogger(FilmeRepositoryIntegrationTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(FilmeRepositoryIntegrationTests.class);
 
 
-        @Test
+    @Test
     void testaInsercaoFilme() {
         Diretor diretor = diretorRepo.findByNome("Hop Bowman");
-        logger.info("find diretor by name HOP BOWMAN", FilmeRepositoryIntegrationTest.class.getSimpleName());
+        logger.info("find diretor by name HOP BOWMAN", FilmeRepositoryIntegrationTests.class.getSimpleName());
         Ator ator = atorRepo.findByNome("Owen Simpson");
-        logger.info("find ator by name OWEN SIMPSON", FilmeRepositoryIntegrationTest.class.getSimpleName());
+        logger.info("find ator by name OWEN SIMPSON", FilmeRepositoryIntegrationTests.class.getSimpleName());
         Duble duble = dubleRepo.findByNome("Tyler Briggs");
-        logger.info("find duble by name TYLER BRIGGS", FilmeRepositoryIntegrationTest.class.getSimpleName());
+        logger.info("find duble by name TYLER BRIGGS", FilmeRepositoryIntegrationTests.class.getSimpleName());
 
 
         Filme filme = new Filme();
