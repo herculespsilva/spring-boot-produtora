@@ -96,6 +96,6 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Conclusão da documentação
 - Criação do vídeo explicando o projeto
 
-# 💾 Linkss <a name = "links"></a>
+# 💾 Links <a name = "links"></a>
 
 
