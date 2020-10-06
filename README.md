@@ -81,17 +81,18 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Software de monitoramento - Métrica e Indicadores *(DevOps)* Parte 1
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
+- Deploy (Azure/AWS) *(DevOps)*
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2
-- Utilização das normas da LGPD *(DevOps)*
-- Segurança por token com JWT
+- Utilização das normas da LGPD *(DevOps)*/*(Back-end)*
+- Segurança por token com JWT *(Back-end)*
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
-- Criação de front-end em Vue.js
-- Controle de estado com Vuex
-- Tratamento de erro em requisições (axios)
+- Criação de front-end em Vue.js *(Back-end)*
+- Controle de estado com Vuex *(Back-end)*
+- Tratamento de erro em requisições (axios) *(Back-end)*
 
 ## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
-- Automatização de integração de testes
+- Automatização de integração de testes  *(DevOps)*
 
 ## Sprints 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
