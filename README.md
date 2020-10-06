@@ -81,17 +81,15 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Deploy (AWS) *(DevOps)*
+- Gerenciador de pipeline *(DevOps)* 
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2
-- Utilização das normas da LGPD *(DevOps)* ou *(Back-end)*?
-- Azure Boards *(DevOps)*
+- Segurança DevOps *(Pesquisa)*
 - Segurança por token com JWT *(Back-end)*
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
-- Gerenciador de pipeline *(DevOps)*
-- UX (Front-End)
-- Good Analytics *(Pesquisa)*
-- Criação de front-end em Vue.js *(Back-end)*
-- Controle de estado com Vuex *(Back-end)*
+- Divisão de ambiente (Teste/Produção) *(DevOps)* 
+- Criação de front-end em Vue.js *(front-end)*
+- Controle de estado com Vuex *(front-end)*
 - Tratamento de erro em requisições (axios) *(Back-end)*
 
 ## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
