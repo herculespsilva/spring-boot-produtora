@@ -74,9 +74,10 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Formatação de JSON. CORS *(Back-end)*
 - Criação de controllers responsaveis pelo login e autenticação *(Back-end)*
 - Mudanças no banco de dados *(Back-end)*
+- Pesquisa sobre plataforma Cerberon *(Pesquisa)*
+
 - Implementação de Jenkins *(DevOps)*
 - Gerenciador de logs do servidor *(DevOps)*
-- Pesquisa sobre plataforma Cerberon *(Pesquisa)*
 - Software de monitoramento - Métrica e Indicadores *(DevOps)* Parte 1
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
