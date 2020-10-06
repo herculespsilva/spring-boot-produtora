@@ -77,12 +77,12 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Implementação de Jenkins *(DevOps)*
 - Gerenciador de logs do servidor *(DevOps)*
 - Pesquisa sobre plataforma Cerberon *(Pesquisa)*
-- Software de monitoramento - Métrica e Indicadores *(DevOps)*
+- Software de monitoramento - Métrica e Indicadores *(DevOps)* Parte 1
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2
+- Utilização das normas da LGPD *(DevOps)*
 - Segurança por token com JWT
-- Utilização das normas da LGPD
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
 - Criação de front-end em Vue.js
