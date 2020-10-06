@@ -80,7 +80,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Software de monitoramento - Métrica e Indicadores *(DevOps)* Parte 1
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
-- Deploy (Azure) *(DevOps)*
+- Deploy (AWS) *(DevOps)*
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2
 - Utilização das normas da LGPD *(DevOps)* ou *(Back-end)*?
 - Azure Boards *(DevOps)*
