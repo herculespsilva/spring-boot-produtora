@@ -1,7 +1,7 @@
 # Sprint 2! [02/10/2020]
 
 ### Implementação de Jenkins 
-- Implementação e criação de Job
+- Implementação e criação de Job.
 
 ### Gerenciador de logs do servidor 
 - Gerenciador de LOG da aplicação.
