@@ -1,4 +1,4 @@
-# Sprint 2! [02/10/2020]
+# Sprint 2! [04/10/2020]
 
 ### Implementação de Jenkins 
 - Implementação e criação de Job.
