@@ -61,12 +61,12 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 
 # 📊 Planejamento <a name = "planejamento"></a>
 ## Sprints 1 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/1entrega.md)
-- Levantamento de requisitos, e Criação do DER
-- Inicio da modelagem do banco de dados
-- Refatoração da aplicação
-- Implementação dos serviços do ambiente
-- Mudanças no banco de dados
-- wireframes das paginas
+- Levantamento de requisitos, e Criação do DER *(Back-end)*
+- Inicio da modelagem do banco de dados *(Back-end)*
+- Refatoração da aplicação *(Back-end)*
+- Implementação dos serviços do ambiente *(Back-end)*
+- Mudanças no banco de dados *(Back-end)*
+- wireframes das paginas *(Front-End)*
 
 ## Sprints 2 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/2entrega.md)
 - REST com Spring *(Back-end)*
@@ -75,24 +75,27 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Criação de controllers responsaveis pelo login e autenticação *(Back-end)*
 - Mudanças no banco de dados *(Back-end)*
 - Pesquisa sobre plataforma Cerberon *(Pesquisa)*
-
 - Implementação de Jenkins *(DevOps)*
 - Gerenciador de logs do servidor *(DevOps)*
 - Software de monitoramento - Métrica e Indicadores *(DevOps)* Parte 1
 
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
-- Deploy (Azure/AWS) *(DevOps)*
+- Deploy (Azure) *(DevOps)*
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2
-- Utilização das normas da LGPD *(DevOps)*/*(Back-end)*
+- Utilização das normas da LGPD *(DevOps)* ou *(Back-end)*?
+- Azure Boards *(DevOps)*
 - Segurança por token com JWT *(Back-end)*
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
+- Gerenciador de pipeline *(DevOps)*
+- UX (Front-End)
+- Good Analytics *(Pesquisa)*
 - Criação de front-end em Vue.js *(Back-end)*
 - Controle de estado com Vuex *(Back-end)*
 - Tratamento de erro em requisições (axios) *(Back-end)*
 
 ## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
-- Automatização de integração de testes  *(DevOps)*
+- Automatização de integração de testes *(DevOps)*
 
 ## Sprints 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
