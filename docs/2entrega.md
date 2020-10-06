@@ -1,8 +1,10 @@
 # Sprint 2! [02/10/2020]
 
 ### Implementação de Jenkins 
+- Implementação e criação de Job
 
 ### Gerenciador de logs do servidor 
+- Gerenciador de LOG da aplicação.
 
 ### Software de monitoramento -Grafana 
 #### Endpoints (Itens monitorados)
@@ -23,6 +25,6 @@
 - [sessions] – lista as sessões HTTP, pois estamos usando o Spring Session
 - [shutdown] – executa um desligamento normal do aplicativo */threaddump – despeja as informações de encadeamento da JVM subjacente
 
-### Installation
+##### Installation
 Requisitos: [actuator].
 
