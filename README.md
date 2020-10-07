@@ -21,7 +21,7 @@
 - <img src="imagem\linkedln.png" height=15px> [Hercules Pereira da Silva](https://www.linkedin.com/in/hercules-pereira-03189711a/) 
 - <img src="imagem\linkedln.png" height=15px> [Lucas Campioni Rodrigues Porto](https://www.linkedin.com/in/lucascampioni/) 
 - <img src="imagem\linkedln.png" height=15px> [Jonathan Moreno Martins](https://www.linkedin.com/in/jonathanmmartins/) 
-- <img src="imagem\linkedln.png" height=15px> [Victor Cardial De Menezes Pereira]() 
+- <img src="imagem\linkedln.png" height=15px> [Victor Cardial De Menezes Pereira](https://www.linkedin.com/in/victor-cardial-de-menezes-pereira-67491018a/) 
 
 ## 🕵🏼 Sobre <a name = "about"></a>
 
