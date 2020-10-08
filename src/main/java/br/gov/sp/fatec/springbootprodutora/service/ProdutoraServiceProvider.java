@@ -49,6 +49,7 @@ public interface ProdutoraServiceProvider {
     public List<Ator> buscarAtorPorLetra(String nome);
 
     //Duble
+    public Duble criaDuble(String nome, Long cpf, String especialidade);
 
     public List<Duble> buscarTodosDubles(); 
 

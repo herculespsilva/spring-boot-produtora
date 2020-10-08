@@ -200,6 +200,15 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
     }
 
     //Duble----------------------------------------------------------------------------------
+    public Duble criaDuble(String nome, Long cpf, String especialidade){
+        Duble duble = new Duble();
+        duble.setNome(nome);
+        duble.setCpf(cpf);
+        duble.setEspecialidade(especialidade);
+        dubleRepo.save(duble);
+
+        return duble;
+    }
 
     @Override
     public List<Duble> buscarTodosDubles(){
