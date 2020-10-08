@@ -18,7 +18,7 @@
 ## ✍️ Autores:  <a name = "authors"></a>
 - <img src="imagem\linkedln.png" height=15px> [Carlos Henrique Monteiro Neto ](https://www.linkedin.com/in/carlos-henrique-monteiro-neto-b62a0413a/) 
 - <img src="imagem\linkedln.png" height=15px> [Daniel Willians Ignacio de Souza](https://www.linkedin.com/in/danielwisouza/)
-- <img src="imagem\linkedln.png" height=15px> [Hercules Pereira da Silva](https://www.linkedin.com/in/hercules-pereira-03189711a/) 
+- <img src="imagem\linkedln.png" height=15px> [Hercules Pereira da Silva](https://www.linkedin.com/in/hercules-pereira) 
 - <img src="imagem\linkedln.png" height=15px> [Lucas Campioni Rodrigues Porto](https://www.linkedin.com/in/lucascampioni/) 
 - <img src="imagem\linkedln.png" height=15px> [Jonathan Moreno Martins](https://www.linkedin.com/in/jonathanmmartins/) 
 - <img src="imagem\linkedln.png" height=15px> [Victor Cardial De Menezes Pereira](https://www.linkedin.com/in/victor-cardial-de-menezes-pereira-67491018a/) 
