@@ -74,7 +74,7 @@ public class SegurancaServiceImpl implements SegurancaService {
     public Usuario updateUsuario(Long id, String nome, String senha, String autorizacao) {
 
         Autorizacao aut = autoRepo.findByNome(autorizacao);
-        if(aut == null) {
+        if (aut == null) {
             aut = new Autorizacao();
             aut.setNome(autorizacao);
             autoRepo.save(aut);
@@ -84,11 +84,12 @@ public class SegurancaServiceImpl implements SegurancaService {
            .map(user -> {
                user.setNome(nome);
                user.setSenha(senha);
-               user.setAutorizacoes(new HashSet<Autorizacao>());
                Usuario updated = usuarioRepo.save(user);
 
                return updated;
         }).orElse(null);
+
+        
     }
 
     public Optional<Usuario> deleteUsuario(Long id) {
