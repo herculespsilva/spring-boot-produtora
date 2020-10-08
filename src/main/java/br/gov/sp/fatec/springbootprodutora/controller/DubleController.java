@@ -9,6 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -67,5 +68,16 @@ public class DubleController {
             uriComponentsBuilder.path(
                 "/duble/id/" + duble.getId()).build().toUri());      
         return new ResponseEntity<Duble>(duble,responseHeaders,HttpStatus.CREATED);
+        }
+
+    @DeleteMapping(value = "/delete/{id}")
+    public ResponseEntity<Long> deletePost(@PathVariable Long id) {
+
+        try{
+            produtoraService.deleteDuble(id);
+            return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+        }catch (Exception e){
+            return new ResponseEntity<>(id, HttpStatus.OK);
+        }
     }
 }

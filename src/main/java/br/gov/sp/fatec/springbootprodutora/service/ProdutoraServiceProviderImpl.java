@@ -247,4 +247,9 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
         }
         throw new RegistroNaoEncontradoException("duble nao encontrado!");
     }
+
+    public void deleteDuble(Long id){
+        dubleRepo.deleteById(id);
+    }
+
 }
