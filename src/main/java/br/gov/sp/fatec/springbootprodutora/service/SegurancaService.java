@@ -15,7 +15,7 @@ public interface SegurancaService {
 
     public Usuario criaUsuario(String nome, String senha, String autorizacao);
 
-    public Object deleteUsuario(Long id);
+    public void deleteUsuario(Long id);
 
     public Usuario updateUsuario(Long id, String nome, String senha, String autorizacao);
 }

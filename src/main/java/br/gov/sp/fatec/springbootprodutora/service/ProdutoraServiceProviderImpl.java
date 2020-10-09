@@ -120,6 +120,14 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
     }
 
     //Diretor---------------------------------------------------------------------------------------------
+    public Diretor criaDiretor(String nome, Long cpf) {
+        Diretor diretor = new Diretor();
+        diretor.setNome(nome);
+        diretor.setCpf(cpf);
+        diretorRepo.save(diretor);
+
+        return diretor;
+    }
 
     @Override
     public List<Diretor> buscarTodosDiretores(){
@@ -159,7 +167,20 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
         throw new RegistroNaoEncontradoException("diretor nao encontrado!");
     }
 
+    public void deleteDiretor(Long id){
+        diretorRepo.deleteById(id);
+    }
+
     //Ator ---------------------------------------------------------------------------------------------------
+    public Ator criaAtor(String nome, Long cpf, String fama){
+        Ator ator = new Ator();
+        ator.setNome(nome);
+        ator.setCpf(cpf);
+        ator.setFama(fama);
+        atorRepo.save(ator);
+
+        return ator;
+    }
 
     @Override
     public List<Ator> buscarTodosAtores(){
@@ -197,6 +218,10 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
             return ator;
         }
         throw new RegistroNaoEncontradoException("ator nao encontrado!");
+    }
+
+    public void deleteAtor(Long id){
+        atorRepo.deleteById(id);
     }
 
     //Duble----------------------------------------------------------------------------------

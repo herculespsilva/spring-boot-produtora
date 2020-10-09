@@ -72,12 +72,11 @@ public class DubleController {
 
     @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<Long> deletePost(@PathVariable Long id) {
-
         try{
             produtoraService.deleteDuble(id);
-            return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+            return new ResponseEntity<>(id, HttpStatus.NO_CONTENT);
         }catch (Exception e){
-            return new ResponseEntity<>(id, HttpStatus.OK);
+            return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
         }
     }
 }

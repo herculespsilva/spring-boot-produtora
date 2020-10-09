@@ -89,15 +89,9 @@ public class SegurancaServiceImpl implements SegurancaService {
                return updated;
         }).orElse(null);
 
-        
     }
 
-    public Optional<Usuario> deleteUsuario(Long id) {
-        usuarioRepo.deleteById(id);
-        if(usuarioRepo.findById(id)!=null){
-            return usuarioRepo.findById(id);
-        }else{
-            return usuarioRepo.findById(id);
-        }
+    public void deleteUsuario(Long id) {
+        usuarioRepo.deleteById(id);       
     }
 }

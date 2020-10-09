@@ -72,28 +72,22 @@ public class UsuarioController {
         return new ResponseEntity<Usuario>(usuario,responseHeaders,HttpStatus.CREATED);
     }
 
-    /*@DeleteMapping
-    public void deleteUsuario(@RequestBody Long id){
-        segurancaService.deleteUsuario(id);
-    }*/
-
-     @DeleteMapping(value = "/delete/{id}")
+    @DeleteMapping(value = "/delete/{id}")
     public ResponseEntity<Long> deletePost(@PathVariable Long id) {
-
-
-        if ((segurancaService.deleteUsuario(id)!=null)) {
+        try{
+            segurancaService.deleteUsuario(id);
+            return new ResponseEntity<>(id, HttpStatus.NO_CONTENT);
+        }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
         }
-
-        return new ResponseEntity<>(id, HttpStatus.OK);
     }
 
     @PutMapping(value="/altera/{id}")
     public Usuario update(@PathVariable("id") long id,@RequestBody Usuario user) {
         try{
-        return segurancaService.updateUsuario(id, user.getNome(), user.getSenha(), "ROLE_USUARIO");
+            return segurancaService.updateUsuario(id, user.getNome(), user.getSenha(), "ROLE_USUARIO");
         }catch (Exception e){
-        return null;
+            return null;
         }
 
     }
