@@ -85,7 +85,7 @@ public class DubleController {
     public ResponseEntity<Duble> Put(@PathVariable(value = "id") long id, @RequestBody Duble duble) {
         try{
             produtoraService.updateDuble(id, duble.getNome(), duble.getCpf(), duble.getEspecialidade());
-            return new ResponseEntity<Duble>(duble, HttpStatus.OK);
+            return new ResponseEntity<Duble>(duble, HttpStatus.NO_CONTENT);
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }    

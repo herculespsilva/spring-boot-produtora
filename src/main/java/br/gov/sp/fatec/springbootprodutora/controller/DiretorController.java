@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -82,5 +83,15 @@ public class DiretorController {
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
         }
+    }
+
+    @PutMapping(value = "/altera/{id}")
+    public ResponseEntity<Diretor> Put(@PathVariable(value = "id") long id, @RequestBody Diretor diretor) {
+        try{
+            produtoraService.updateDiretor(id, diretor.getNome(), diretor.getCpf());
+            return new ResponseEntity<Diretor>(diretor, HttpStatus.NO_CONTENT);
+        }catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }    
     }
 }

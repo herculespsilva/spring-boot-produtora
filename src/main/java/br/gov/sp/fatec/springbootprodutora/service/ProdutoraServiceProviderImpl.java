@@ -171,6 +171,20 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
         diretorRepo.deleteById(id);
     }
 
+    public Diretor updateDiretor(Long id, String nome, Long cpf){
+        Optional<Diretor> oldDiretor = diretorRepo.findById(id);
+
+        if(oldDiretor.isPresent()){
+            Diretor diretor = oldDiretor.get();
+            diretor.setNome(nome);
+            diretor.setCpf(cpf);
+            diretorRepo.save(diretor);
+
+            return diretor;
+        }
+        throw new RegistroNaoEncontradoException("diretor nao encontrado!");
+    }
+
     //Ator ---------------------------------------------------------------------------------------------------
     public Ator criaAtor(String nome, Long cpf, String fama){
         Ator ator = new Ator();
@@ -222,6 +236,21 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
 
     public void deleteAtor(Long id){
         atorRepo.deleteById(id);
+    }
+
+    public Ator updateAtor(Long id, String nome, Long cpf, String fama){
+        Optional<Ator> oldAtor = atorRepo.findById(id);
+
+        if(oldAtor.isPresent()){
+            Ator ator = oldAtor.get();
+            ator.setNome(nome);
+            ator.setCpf(cpf);
+            ator.setFama(fama);
+            atorRepo.save(ator);
+
+            return ator;
+        }
+        throw new RegistroNaoEncontradoException("ator nao encontrado!");
     }
 
     //Duble----------------------------------------------------------------------------------

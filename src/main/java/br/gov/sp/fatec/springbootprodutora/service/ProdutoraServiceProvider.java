@@ -41,6 +41,8 @@ public interface ProdutoraServiceProvider {
 
     public void deleteDiretor(Long id);
 
+    public Diretor updateDiretor(Long id, String nome, Long cpf);
+
     //Ator
     public Ator criaAtor(String nome, Long cpf, String fama);
 
@@ -53,6 +55,8 @@ public interface ProdutoraServiceProvider {
     public List<Ator> buscarAtorPorLetra(String nome);
 
     public void deleteAtor(Long id);
+
+    public Ator updateAtor(Long id, String nome, Long cpf, String fama);
 
     //Duble
     public Duble criaDuble(String nome, Long cpf, String especialidade);

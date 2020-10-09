@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -78,5 +79,15 @@ public class AtorController {
         }catch (Exception e){
             return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
         }
+    }
+
+    @PutMapping(value = "/altera/{id}")
+    public ResponseEntity<Ator> Put(@PathVariable(value = "id") long id, @RequestBody Ator ator) {
+        try{
+            produtoraService.updateAtor(id, ator.getNome(), ator.getCpf(), ator.getFama());
+            return new ResponseEntity<Ator>(ator, HttpStatus.NO_CONTENT);
+        }catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }    
     }
 }
