@@ -277,4 +277,19 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
         dubleRepo.deleteById(id);
     }
 
+    public Duble updateDuble(Long id, String nome, Long cpf, String especialidade){
+        Optional<Duble> oldDuble = dubleRepo.findById(id);
+
+        if(oldDuble.isPresent()){
+            Duble duble = oldDuble.get();
+            duble.setNome(nome);
+            duble.setCpf(cpf);
+            duble.setEspecialidade(especialidade);
+            dubleRepo.save(duble);
+
+            return duble;
+        }
+        throw new RegistroNaoEncontradoException("duble nao encontrado!");
+    }
+
 }

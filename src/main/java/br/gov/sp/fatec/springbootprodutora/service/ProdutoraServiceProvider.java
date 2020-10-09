@@ -66,4 +66,6 @@ public interface ProdutoraServiceProvider {
     public List<Duble> buscarDublePorLetra(String nome);
 
     public void deleteDuble(Long id);
+
+    public Duble updateDuble(Long id, String nome, Long cpf, String especialidade);
 }
