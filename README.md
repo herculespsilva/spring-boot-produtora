@@ -16,7 +16,6 @@
 - [Links](#links)
 
 ## ✍️ Autores:  <a name = "authors"></a>
-- <img src="imagem\linkedln.png" height=15px> [Carlos Henrique Monteiro Neto ](https://www.linkedin.com/in/carlos-henrique-monteiro-neto-b62a0413a/) 
 - <img src="imagem\linkedln.png" height=15px> [Daniel Willians Ignacio de Souza](https://www.linkedin.com/in/danielwisouza/)
 - <img src="imagem\linkedln.png" height=15px> [Hercules Pereira da Silva](https://www.linkedin.com/in/hercules-pereira) 
 - <img src="imagem\linkedln.png" height=15px> [Lucas Campioni Rodrigues Porto](https://www.linkedin.com/in/lucascampioni/) 
