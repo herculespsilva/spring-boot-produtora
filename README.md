@@ -81,7 +81,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 ## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Deploy (AWS) *(DevOps)*
 - Gerenciador de pipeline *(DevOps)* 
-- Configuração Docker (Preapparação do ambiente)*(DevOps)*
+- Configuração Docker (Preparação do ambiente)*(DevOps)*
 - Segurança DevOps *(Pesquisa)*
 - Segurança por token com JWT *(Back-end)*
 
