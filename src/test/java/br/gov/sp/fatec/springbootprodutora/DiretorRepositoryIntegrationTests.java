@@ -19,11 +19,11 @@ public class DiretorRepositoryIntegrationTests {
 
     @Autowired
     private DiretorRepository diretorRepo;
-
+/*
     @Test
 	void contextLoads() {
     }
-/*
+
     @Test
     void testaInsercaoDiretor() {
         Diretor diretor = new Diretor();

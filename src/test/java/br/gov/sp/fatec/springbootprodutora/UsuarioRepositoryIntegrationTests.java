@@ -30,11 +30,11 @@ public class UsuarioRepositoryIntegrationTests {
 
     @Autowired
     private SegurancaService segService;
-
+/*
     @Test
 	void contextLoads() {
     }
-    /*
+    
     @Test
     void testaInsercao() {
         Usuario usuario = new Usuario();
