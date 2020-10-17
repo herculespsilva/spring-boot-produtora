@@ -36,7 +36,7 @@ public class NovelaRepositoryIntegrationTests {
 
     @Autowired
     private DubleRepository dubleRepo;
-
+/*
     @Test
     void testaInsercaoNovela() {
         Diretor diretor = diretorRepo.findByNome("Luke Winters");
@@ -62,5 +62,5 @@ public class NovelaRepositoryIntegrationTests {
     void testBuscaNovelaPorAnoEQuantidadeCapitulo() {
         Novela novela = novelaRepo.findByAnoAndCapitulo(1998l, 11l);
         assertNotNull(novela);
-    }  
+    }  */
 }

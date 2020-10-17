@@ -34,7 +34,7 @@ public class UsuarioRepositoryIntegrationTests {
     @Test
 	void contextLoads() {
     }
-    
+    /*
     @Test
     void testaInsercao() {
         Usuario usuario = new Usuario();
@@ -108,5 +108,5 @@ public class UsuarioRepositoryIntegrationTests {
     void testaServicoCriaUsuario() {
          Usuario usuario = segService.criaUsuario("mineda", "SenhaF0rte", "ROLE_USUARIO");
          assertNotNull(usuario);
-    }
+    }*/
 }

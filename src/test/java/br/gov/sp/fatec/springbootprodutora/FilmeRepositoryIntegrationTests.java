@@ -43,7 +43,7 @@ public class FilmeRepositoryIntegrationTests {
 
     private static final Logger logger = LoggerFactory.getLogger(FilmeRepositoryIntegrationTests.class);
 
-
+/*
     @Test
     void testaInsercaoFilme() {
         Diretor diretor = diretorRepo.findByNome("Hop Bowman");
@@ -85,5 +85,5 @@ public class FilmeRepositoryIntegrationTests {
         Filme filme = filmeRepo.buscaFilmePorNomeEDiretor("Uma noite na floresta", "Hop Bowman");
         assertNotNull(filme);
     }
-    
+    */
 }
