@@ -3,7 +3,9 @@ node{
       git 'https://github.com/herculespsilva/spring-boot-produtora'
    }
    stage('Compile-Package'){
-      sh 'mvn package'
+      //path maven
+      def mvnHome = tool name: 'Maven 3', type: 'maven'
+      sh "${mvnHome}/bin/mvn package"
    }
    
 }
