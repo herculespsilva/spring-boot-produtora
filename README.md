@@ -33,7 +33,6 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="imagem\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
 - [<img src="imagem\hibernate.png" height=40px>](https://hibernate.org/) Hibernate
 - [<img src="imagem\spring.png" height=20px>](https://spring.io/) Spring
-- [<img src="imagem\docker.png" height=20px>](https://www.docker.com/products/docker-desktop/) Docker
 
 
 #  Instalação e execução  <a name = "tinstall"></a>
