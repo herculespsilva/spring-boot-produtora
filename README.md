@@ -46,7 +46,7 @@ mvn clean package
 ```
 #### 2 - Iniciar a aplicação
 ```
- mvn spring-boot:run
+docker-compose up
 ```
 #### 3- Rota padrão
 ```
