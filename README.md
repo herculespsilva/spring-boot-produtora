@@ -42,7 +42,7 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 
 #### 1 - Instale as dependências do projeto
 ```
-mvn clean package
+mvn clean install
 ```
 #### 2 - Iniciar a aplicação
 ```
