@@ -9,6 +9,7 @@ ENV ADDITIONAL_OPTS=${ADDITIONAL_OPTS}
 WORKDIR /opt/spring_boot
 
 COPY /target/spring-boot*.jar spring_boot_produtora.jar
+#COPY ./DDL.sql /docker-entrypoint-initdb.d/
 
 SHELL ["/bin/sh", "-c"]
 

@@ -74,6 +74,11 @@ create table atu_atuacao (
 		references pes_pessoa(pes_id)
 );
 
+    SET character_set_client = utf8;
+    SET character_set_connection = utf8;
+    SET character_set_results = utf8;
+    SET collation_connection = utf8_general_ci;
+
     insert into usr_usuario (usr_nome, usr_senha) values ("admin", '123');
     insert into aut_autorizacao (aut_nome) values ('ROLE_ADMIN');
     insert into uau_usuario_autorizacao values(1, 1);
@@ -93,12 +98,6 @@ create table atu_atuacao (
 
     INSERT INTO flm_filme (fmg_id,flm_descricao) VALUES (2,"Lorem ipsum velit justo nec ante.");
 
-    INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),
-                                                   (4, 1), 
-                                                   (5, 1),
-                                                   (1, 2),
-                                                   (2, 2), 
-                                                   (3, 2),
-                                                   (6, 2);
+    INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),(4, 1),(1, 2),(2, 2),(3, 2),(6, 2);
 
                                                    
