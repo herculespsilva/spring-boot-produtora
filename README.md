@@ -43,22 +43,28 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 
 #  Instalação e execução  <a name = "tinstall"></a>
 ### Pré-requisitos
+```
+Instalar o maven e o docker para execução do projeto.
+```
 
 #### Instalação
-
-#### 1 - Instale as dependências do projeto
+#### 1 - Clone o projeto para uma máquina local
+```
+git clone https://github.com/herculespsilva/spring-boot-produtora.git
+```
+#### 2 - Instale as dependências do projeto
 ```
 mvn clean install
 ```
-#### 2 - Iniciar a aplicação
+#### 3 - Iniciar a aplicação
 ```
 docker-compose up
 ```
-#### 3- Rota padrão
+#### 4 - Rota padrão
 ```
 localhost:8080/spring-app
 ```
-#### 4 - Usuário administrador
+#### 5 - Usuário administrador
 ```
 User: admin Senha: 123
 ```
