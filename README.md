@@ -33,6 +33,12 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="imagem\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
 - [<img src="imagem\hibernate.png" height=40px>](https://hibernate.org/) Hibernate
 - [<img src="imagem\spring.png" height=20px>](https://spring.io/) Spring
+- [<img src="imagem\docker.png" height=20px>](https://www.docker.com/) Docker
+- [<img src="imagem\aws.png" height=20px>](https://aws.amazon.com/pt/ AWS
+- [<img src="imagem\jenkins.png" height=20px>](https://www.jenkins.io/) Jenkins
+
+
+
 
 
 #  Instalação e execução  <a name = "tinstall"></a>
