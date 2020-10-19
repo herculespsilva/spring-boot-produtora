@@ -54,7 +54,7 @@ git clone https://github.com/herculespsilva/spring-boot-produtora.git
 ```
 #### 2 - Instale as dependências do projeto
 ```
-mvn clean install
+mvn clean package
 ```
 #### 3 - Iniciar a aplicação
 ```
