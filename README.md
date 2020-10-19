@@ -94,7 +94,6 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Deploy (AWS) *(DevOps)*
 - Gerenciador de pipeline *(DevOps)* 
 - Configuração Docker (Preparação do ambiente)*(DevOps)*
-- Segurança DevOps *(Pesquisa)*
 - Segurança por token com JWT *(Back-end)*
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
