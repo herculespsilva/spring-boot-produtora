@@ -98,13 +98,14 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2
-- Divisão de ambiente (Teste/Produção) *(DevOps)* 
+- Deploy automático (Jenkins with Docker Deploy AWS)
 - Criação de front-end em Vue.js *(front-end)*
 - Controle de estado com Vuex *(front-end)*
 - Tratamento de erro em requisições (axios) *(Back-end)*
 
 ## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
 - Automatização de integração de testes *(DevOps)*
+- Divisão de ambiente (Teste/Produção) *(DevOps)* 
 
 ## Sprints 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
