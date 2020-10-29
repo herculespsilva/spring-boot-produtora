@@ -30,7 +30,7 @@ public class SegurancaServiceImpl implements SegurancaService {
     private UsuarioRepository usuarioRepo;
 
     @Autowired
-    private PasswordEncoder passEnconder;
+    private PasswordEncoder passEncoder;
 
     @Override
     @PreAuthorize("hasRole('ADMIN')")
@@ -83,7 +83,7 @@ public class SegurancaServiceImpl implements SegurancaService {
         }
         Usuario usuario = new Usuario();
         usuario.setNome(nome);
-        usuario.setSenha(senha);
+        usuario.setSenha(passEncoder.encode(senha));
         usuario.setAutorizacoes(new HashSet<Autorizacao>());
         usuario.getAutorizacoes().add(aut);
         usuarioRepo.save(usuario);
