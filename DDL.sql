@@ -79,9 +79,9 @@ create table atu_atuacao (
     SET character_set_results = utf8;
     SET collation_connection = utf8_general_ci;
 
-    insert into usr_usuario (usr_nome, usr_senha) values ("admin", '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
+    insert into usr_usuario (usr_nome, usr_senha) values ('admin', '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
     insert into aut_autorizacao (aut_nome) values ('ROLE_ADMIN');
-    insert into uau_usuario_autorizacao values(1, 1);
+    insert into uau_usuario_autorizacao values(1,1);
 
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","92427130099","T"), 
                                                           ("Hop Bowman","29949872899","T");
