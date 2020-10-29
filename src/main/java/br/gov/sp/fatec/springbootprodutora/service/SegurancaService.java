@@ -2,9 +2,12 @@ package br.gov.sp.fatec.springbootprodutora.service;
 
 import java.util.List;
 
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import br.gov.sp.fatec.springbootprodutora.entity.Autorizacao;
 import br.gov.sp.fatec.springbootprodutora.entity.Usuario;
 
-public interface SegurancaService {
+public interface SegurancaService extends UserDetailsService{
 
     //Usuario
     public List<Usuario>buscarTodosUsuarios();
@@ -18,4 +21,6 @@ public interface SegurancaService {
     public void deleteUsuario(Long id);
 
     public Usuario updateUsuario(Long id, String nome, String senha, String autorizacao);
+
+    public Autorizacao buscarAutorizacaoPorNome(String nome);
 }

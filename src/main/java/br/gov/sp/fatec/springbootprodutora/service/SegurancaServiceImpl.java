@@ -3,9 +3,14 @@ package br.gov.sp.fatec.springbootprodutora.service;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
-
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,13 +29,18 @@ public class SegurancaServiceImpl implements SegurancaService {
     @Autowired
     private UsuarioRepository usuarioRepo;
 
+    @Autowired
+    private PasswordEncoder passEnconder;
+
     @Override
+    @PreAuthorize("hasRole('ADMIN')")
     public List<Usuario>buscarTodosUsuarios()
     {
         return usuarioRepo.findAll();
     }
 
     @Override
+    @PreAuthorize("hasAnyRole('ADMIN','USUARIO')")
     public Usuario buscarUsuarioPorId(Long id)
     {
         Optional<Usuario> usuarioOp= usuarioRepo.findById(id);
@@ -42,6 +52,7 @@ public class SegurancaServiceImpl implements SegurancaService {
     }
 
     @Override
+    @PreAuthorize("isAuthenticated()")
     public Usuario buscarUsuarioPorNome(String nome)
     {
         Usuario usuario = usuarioRepo.findByNome(nome);
@@ -50,6 +61,16 @@ public class SegurancaServiceImpl implements SegurancaService {
             return usuario;
         }
         throw new RegistroNaoEncontradoException("usuario nao encontrado!");
+    }
+
+    @Override
+    @PreAuthorize("isAuthenticated()")
+    public Autorizacao buscarAutorizacaoPorNome(String nome) {
+        Autorizacao autorizacao = autoRepo.findByNome(nome);
+        if (autorizacao != null) {
+            return autorizacao;
+        }
+        throw new RegistroNaoEncontradoException("autorizacao nao encontrada!");
     }
 
     @Transactional
@@ -93,5 +114,19 @@ public class SegurancaServiceImpl implements SegurancaService {
 
     public void deleteUsuario(Long id) {
         usuarioRepo.deleteById(id);       
+    }
+
+    //criando método para realizar login
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Usuario usuario = usuarioRepo.findByNome(username);
+        if (usuario == null) {
+            throw new UsernameNotFoundException("Usuário " + username + " não encontrado! ");
+        }
+        return User.builder().username(username).password(usuario.getSenha())
+                .authorities(usuario.getAutorizacoes().stream()
+                    .map(Autorizacao::getNome).collect(Collectors.toList())
+                     .toArray(new String[usuario.getAutorizacoes().size()]))
+                .build();
     }
 }
