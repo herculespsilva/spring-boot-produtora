@@ -8,7 +8,7 @@ import br.gov.sp.fatec.springbootprodutora.entity.Duble;
 import br.gov.sp.fatec.springbootprodutora.entity.Filme;
 import br.gov.sp.fatec.springbootprodutora.entity.Novela;
 
-public interface ProdutoraServiceProvider {
+public interface ProdutoraServiceProvider{
 
     //Filme
 
