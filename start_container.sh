@@ -1,3 +1,3 @@
-#!/home/ec2-user
+#!/bin/bash
 
-docker-compose up
+docker-compose -f /home/ec2-user/docker-compose.yaml up
