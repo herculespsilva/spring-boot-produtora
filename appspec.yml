@@ -9,8 +9,12 @@ hooks:
   ApplicationStop:
     - location: scripts/kill_container.sh
       timeout: 20
-      runas: ec2-user
+      runas: root
+  ApplicationBefforeInstall:
+    - location: scripts/load_container.sh
+      timeout: 20
+      runas: root
   ApplicationStart:
     - location: scripts/start_container.sh
       timeout: 10
-      runas: ec2-user
+      runas: root
