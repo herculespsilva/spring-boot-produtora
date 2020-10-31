@@ -5,6 +5,7 @@ hooks:
     - location: script-aws/stop-service.sh
       timeout: 120
       runas: root
+  AfterInstall:
   ApplicationStart:
     - location: script-aws/docker-run.sh
       timeout: 120
