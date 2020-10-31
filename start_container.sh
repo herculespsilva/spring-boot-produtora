@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/home/ec2-user
 
 docker-compose up
