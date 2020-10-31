@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 hooks:
   ApplicationStop:
-    - location: stop_service.sh
+    - location: script-aws/stop_service.sh
       timeout: 120
       runas: root
   ApplicationStart:
-    - location: docker-run.sh
+    - location: script-aws/docker-run.sh
       timeout: 120
       runas: root
