@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 hooks:
   ApplicationStop:
-    - location: script-aws/stop_service.sh
+    - location: script-aws/stop-service.sh
       timeout: 120
       runas: root
   ApplicationStart:
