@@ -5,11 +5,7 @@ hooks:
     - location: stop_service.sh
       timeout: 120
       runas: root
-    - location: deregister_from_elb.sh
-      timeout: 120
-      runas: root
   ApplicationStart:
-    - location: start_service.sh
+    - location: docker-run.sh
       timeout: 120
       runas: root
-
