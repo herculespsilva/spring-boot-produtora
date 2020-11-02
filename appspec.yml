@@ -7,14 +7,14 @@ files:
 
 hooks:
   ApplicationStop:
-    - location: ./scripts/kill_container.sh
+    - location: /home/ec2-user/scripts/kill_container.sh
       timeout: 20
       runas: root
   ApplicationBefforeInstall:
-    - location: ./scripts/load_container.sh
+    - location: /home/ec2-user/scripts/load_container.sh
       timeout: 20
       runas: root
   ApplicationStart:
-    - location: start_container.sh
+    - location: /home/ec2-user/start_container.sh
       timeout: 30
       runas: ubuntu
