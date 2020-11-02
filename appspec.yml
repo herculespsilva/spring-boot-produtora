@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /home/ec2-user
+  - source:  /opt/codedeploy-agent/deployment-root/05ec8714-163f-404d-84ae-47d7e1a5c9bd/d-NK3X6SY36/deployment-archive
     destination: /home/ec2-user
     overwrite: true
 
