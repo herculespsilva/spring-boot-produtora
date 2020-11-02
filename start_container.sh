@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose -f /home/ec2-user/docker-compose.yaml up
+docker-compose up -d --force-recreate --no-color
