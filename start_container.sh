@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin
 
-docker-compose up
+docker-compose up -d --force-recreate --no-color
