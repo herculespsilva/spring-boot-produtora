@@ -5,10 +5,6 @@ files:
     destination: /home/ec2-user
     overwrite: true
 hooks:
-  ApplicationStop:
-    - location: scripts/kill_container.sh
-      timeout: 20
-      runas: root
   ApplicationBefforeInstall:
     - location: scripts/load_container.sh
       timeout: 20
