@@ -17,4 +17,4 @@ hooks:
   ApplicationStart:
     - location: start_container.sh
       timeout: 30
-      runas: root
+      runas: ubuntu
