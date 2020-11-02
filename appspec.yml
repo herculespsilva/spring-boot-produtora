@@ -16,4 +16,5 @@ hooks:
       runas: root
   ApplicationStart:
     - location: start_container.sh
+      timeout: 30
       runas: root
