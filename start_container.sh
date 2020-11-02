@@ -1,3 +1,3 @@
-#!/usr/bin
+#!/home/ec2-user
 
 sudo docker-compose up -d --force-recreate --no-color
