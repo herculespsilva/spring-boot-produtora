@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-set -e
+docker-compose up stop -t 20
 
-docker rm -f spring-app-produtora || true
