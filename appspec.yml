@@ -1,20 +1,20 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /home/ec2-user
     destination: /home/ec2-user
     overwrite: true
 
 hooks:
   ApplicationStop:
-    - location: /home/ec2-user/scripts/kill_container.sh
+    - location: scripts/kill_container.sh
       timeout: 20
       runas: root
   ApplicationBefforeInstall:
-    - location: /home/ec2-user/scripts/load_container.sh
+    - location: scripts/load_container.sh
       timeout: 20
       runas: root
   ApplicationStart:
-    - location: /home/ec2-user/start_container.sh
+    - location: start_container.sh
       timeout: 30
       runas: ubuntu
