@@ -1,5 +1,5 @@
-#!/home/ec2-user
+#!/usr/bin/env bash
 
-sudo su
+cd /home/ec2-user/
 
 sudo docker-compose up -d --force-recreate --no-color
