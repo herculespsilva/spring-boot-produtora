@@ -104,7 +104,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Tratamento de erro em requisições (axios) *(Back-end)*
 
 ## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
-- Automatização de integração de testes *(DevOps)*
+- Automatização de integração de testes *(DevOps)* ( Vídeo: http://bit.ly/AWS-AUTO-DEPLOY )
 - Divisão de ambiente (Teste/Produção) *(DevOps)* 
 
 ## Sprints 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
