@@ -97,7 +97,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Segurança por token com JWT *(Back-end)*
 
 ## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
-- Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2 ( Vídeo: https://bitlybr.com/8TY4tYP )
+- Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2 ( Vídeo: http://bit.ly/MonitorZabbix )
 - Deploy automático (Jenkins with Docker Deploy AWS) ( Vídeo: http://bit.ly/AWS-AUTO-DEPLOY )
 - Criação de front-end em Vue.js *(front-end)*
 - Controle de estado com Vuex *(front-end)*
