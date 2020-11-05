@@ -83,6 +83,10 @@ create table atu_atuacao (
     insert into aut_autorizacao (aut_nome) values ('ROLE_ADMIN');
     insert into uau_usuario_autorizacao values(1,1);
 
+    insert into usr_usuario (usr_nome, usr_senha) values ('diretor', '$2a$10$JAZVEbWS0NTa/w7oy5RHpeMkMCkgkUyCdUpa3R4zJb05EGW/OrzE6');
+    insert into aut_autorizacao (aut_nome) values ('ROLE_DIRETOR');
+    insert into uau_usuario_autorizacao values(2,2);
+
     INSERT INTO pes_pessoa (pes_nome,pes_cpf,tipo) VALUES ("Luke Winters","92427130099","T"), 
                                                           ("Hop Bowman","29949872899","T");
     
