@@ -121,7 +121,7 @@ public class ProdutoraServiceProviderImpl implements ProdutoraServiceProvider {
     }
 
     //Diretor---------------------------------------------------------------------------------------------
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAnyRole('ADMIN, DIRETOR')")
     public Diretor criaDiretor(String nome, Long cpf) {
         Diretor diretor = new Diretor();
         diretor.setNome(nome);
