@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Diretor;
@@ -14,12 +13,11 @@ import br.gov.sp.fatec.springbootprodutora.repository.DiretorRepository;
 
 @SpringBootTest
 @Transactional
-@Rollback
 public class DiretorRepositoryIntegrationTests {
 
     @Autowired
     private DiretorRepository diretorRepo;
-/*
+
     @Test
 	void contextLoads() {
     }
@@ -33,5 +31,4 @@ public class DiretorRepositoryIntegrationTests {
 
         assertNotNull(diretor.getId());
     }
-    */
 }

@@ -7,7 +7,6 @@ import java.util.HashSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import br.gov.sp.fatec.springbootprodutora.entity.Ator;
@@ -22,7 +21,6 @@ import br.gov.sp.fatec.springbootprodutora.repository.NovelaRepository;
 
 @SpringBootTest
 @Transactional
-@Rollback
 public class NovelaRepositoryIntegrationTests {
 
     @Autowired
