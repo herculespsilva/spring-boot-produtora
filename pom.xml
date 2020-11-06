@@ -72,6 +72,13 @@
             <artifactId>jul-to-slf4j</artifactId>
         </dependency>
 
+        <!-- Dependencia do banco ded dados h2, conexão para o banco de dados de testes -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>log4j-over-slf4j</artifactId>
