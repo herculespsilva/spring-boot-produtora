@@ -45,33 +45,28 @@ create table fmg_filmagem (
     fmg_ano bigint not null,
     fmg_duracao float not null,
     diretor bigint unsigned,
-    constraint fmg_pes_fk foreign key (diretor)
-		references pes_pessoa(pes_id)
+    foreign key fmg_pes_fk (diretor) references pes_pessoa(pes_id) on delete restrict on update cascade
 );
 
 create table nov_novela (
 	fmg_id bigint unsigned,
     nov_capitulo bigint not null,
     nov_desc_cap varchar(100) not null,
-    constraint nov_fmg_fk foreign key (fmg_id)
-		references fmg_filmagem(fmg_id)
+    foreign key nov_fmg_fk  (fmg_id) references fmg_filmagem(fmg_id) on delete restrict on update cascade
 );
 
 create table flm_filme (
 	fmg_id bigint unsigned,
     flm_descricao varchar(100) not null,
-    constraint flm_fmg_fk foreign key (fmg_id)
-		references fmg_filmagem(fmg_id)
+    foreign key flm_fmg_fk (fmg_id) references fmg_filmagem(fmg_id) on delete restrict on update cascade
 );
 
 create table atu_atuacao (
 	pes_id bigint unsigned,
     fmg_id bigint unsigned,
     constraint atu_pk primary key(pes_id, fmg_id),
-    constraint atu_fmg_fk foreign key (fmg_id)
-		references fmg_filmagem(fmg_id),
-	constraint atu_pes_fk foreign key (pes_id)
-		references pes_pessoa(pes_id)
+    foreign key atu_fmg_fk (fmg_id) references fmg_filmagem(fmg_id) on delete restrict on update cascade,
+    foreign key atu_pes_fk (pes_id)	references pes_pessoa(pes_id) on delete restrict on update cascade
 );
 
     SET character_set_client = utf8;
@@ -102,6 +97,4 @@ create table atu_atuacao (
 
     INSERT INTO flm_filme (fmg_id,flm_descricao) VALUES (2,"Lorem ipsum velit justo nec ante.");
 
-    INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),(4, 1),(1, 2),(2, 2),(3, 2),(6, 2);
-
-                                                   
+    INSERT INTO atu_atuacao(pes_id, fmg_id) VALUES (1, 1),(4, 1),(1, 2),(2, 2),(3, 2),(6, 2);                 

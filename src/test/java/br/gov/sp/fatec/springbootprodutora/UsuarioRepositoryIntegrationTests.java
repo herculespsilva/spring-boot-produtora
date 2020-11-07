@@ -31,7 +31,7 @@ class SpringBootAppApplicationTests {
     @Autowired
     private SegurancaService segService;
 
-    /*
+    
     @BeforeAll
     static void init(@Autowired JdbcTemplate jdbcTemplate) {
         jdbcTemplate.update("insert into usr_usuario (usr_nome, usr_senha) values (?, ?)",
@@ -76,40 +76,46 @@ class SpringBootAppApplicationTests {
         List<Usuario> usuarios = usuarioRepo.findByNomeContainsIgnoreCase("a");
         assertFalse(usuarios.isEmpty());
     }
+
     @Test
     void testBuscaUsuarioNome() {
         Usuario usuario = usuarioRepo.findByNome("admin");
         assertNotNull(usuario);
     }
+
     @Test
     void testBuscaUsuarioNomeQuery() {
         Usuario usuario = usuarioRepo.buscaUsuarioPorNome("admin");
         assertNotNull(usuario);
     }
+
     @Test
     void testBuscaUsuarioNomeSenha() {
         Usuario usuario = usuarioRepo.findByNomeAndSenha("admin","$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C");
         assertNotNull(usuario);
     }
+
     @Test
     void testBuscaUsuarioNomeSenhaQuery() {
         Usuario usuario = usuarioRepo.buscaUsuarioPorNomeESenha("admin","$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C");
         assertNotNull(usuario);
     }
+
     @Test
     void testBuscaUsuarioNomeAutorizacao() {
         List<Usuario> usuarios = usuarioRepo.findByAutorizacoesNome("ROLE_ADMIN");
         assertFalse(usuarios.isEmpty());
     }
+
     @Test
     void testBuscaUsuarioNomeAutorizacaoQuery() {
         List<Usuario> usuarios = usuarioRepo.buscaPorNomeAutorizacao("ROLE_ADMIN");
         assertFalse(usuarios.isEmpty());
     }
+    
     @Test
     void testaServicoCriaUsuario() {
          Usuario usuario = segService.criaUsuario("mineda", "SenhaF0rte", "ROLE_USUARIO");
          assertNotNull(usuario);
     }
-    */
 }

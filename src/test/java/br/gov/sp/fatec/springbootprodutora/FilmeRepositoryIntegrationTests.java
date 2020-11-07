@@ -43,7 +43,7 @@ public class FilmeRepositoryIntegrationTests {
 
     private static final Logger logger = LoggerFactory.getLogger(FilmeRepositoryIntegrationTests.class);
 
-    /*@BeforeAll
+    @BeforeAll
     static void init(@Autowired JdbcTemplate jdbcTemplate) {
         //diretor
         jdbcTemplate.update("INSERT INTO pes_pessoa (pes_nome, pes_cpf, tipo) VALUES (?, ?, ?)",
@@ -62,9 +62,9 @@ public class FilmeRepositoryIntegrationTests {
                             "Clark Knox", "47725317999", "D", "Dança");
         //filmagem
         jdbcTemplate.update("INSERT INTO fmg_filmagem (fmg_nome, fmg_ano, fmg_duracao, diretor) VALUES (?, ?, ?, ?)",
-                            "Casa Sombria", 1998L, 4F, 1L);
+                            "Casa Sombria", 1998, 4, 1);
         jdbcTemplate.update("INSERT INTO fmg_filmagem (fmg_nome, fmg_ano, fmg_duracao, diretor) VALUES (?, ?, ?, ?)",
-                            "Uma noite na floresta", 2012L, 4F, 2L);
+                            "Uma noite na floresta", 2012, 4, 2);
         //filme                  
         jdbcTemplate.update("INSERT INTO flm_filme (fmg_id, flm_descricao) VALUES (?, ?)",
                             1,"Lorem ipsum velit justo nec ante.");
@@ -116,5 +116,5 @@ public class FilmeRepositoryIntegrationTests {
     void testBuscaFilmePorNomeEDiretorQuery() {
         Filme filme = filmeRepo.buscaFilmePorNomeEDiretor("Uma noite na floresta", "Luke Winters");
         assertNotNull(filme);
-    }*/
+    }
 }
