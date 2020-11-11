@@ -106,6 +106,8 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 ## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
 - Automatização de integração de testes *(DevOps)* 
 - Divisão de ambiente (Teste/Produção) *(DevOps)* 
+- Orquestador de deploy(portainer.io) *(DevOps)*
+- Gestão de Mudanças Banco de Dados(liquibase) *(DevOps)*
 
 ## Sprints 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
