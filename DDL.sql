@@ -2,7 +2,7 @@ create schema produtora;
 
 create user 'user'@'localhost' identified by 'pass123';
 
-grant select, insert, delete, update on produtora.* to user@'localhost';
+grant select, insert, delete, update, create on produtora.* to user@'localhost';
 
 use produtora;
 
