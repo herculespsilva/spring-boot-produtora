@@ -1,9 +1,0 @@
-<changeSet author="liquibase-docs" id="sqlFile-example">
-     <sqlFile dbms="!h2, oracle, mysql"
-        encoding="UTF-8"
-        endDelimiter="\nGO"
-        path="./DDL.sql"
-        relativeToChangelogFile="true"
-        splitStatements="true"
-        stripComments="true"/>
-</changeSet>
