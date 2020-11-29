@@ -18,7 +18,7 @@ Modelos DDL e DML do Projeto
 ### Back-end
 - Refatoração da aplicação (Back-end)
 - Implementação dos serviços do ambiente (Back-end)
--- Mudanção na estrutura do Projeto migração para Spring Boot
+#### Mudanção na estrutura do Projeto migração para Spring Boot
 
 ### Front-End
 - Wireframes das paginas (Front-End)
