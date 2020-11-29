@@ -1,6 +1,6 @@
 <h1 align="center">
     <img alt="Gobarber" src="imagem/logo_fatecsjc.png" width="250px" />
-    <img alt="Gobarber" src="imagem/devops.png" width="250px" />
+    <img alt="Gobarber" src="imagem/devops.png" width="350px" />
 </h1>
 
 Este repositório é utilizado academicamente para a disciplina de Laboratório de Projeto de Bando de Dados V, ministrada pelo professor Eduardo Sakaue na FATEC São José dos Campos - Prof. Jessen Vidal.
