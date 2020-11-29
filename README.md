@@ -1,6 +1,6 @@
 <h1 align="center">
     <img alt="Gobarber" src="imagem/logo_fatecsjc.png" width="250px" />
-    <h1 align="center">
+    <h1>
     +
 </h1>
     <img alt="Gobarber" src="imagem/devops.png" width="200px" />
