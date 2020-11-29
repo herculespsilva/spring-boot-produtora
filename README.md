@@ -68,6 +68,8 @@ User: admin Senha: 123
 Para a execução do projeto, é necessaria a instalação do [Apache Maven](#tecnologias-utilizadas), [MySql](#tecnologias-utilizadas) e [JAVA](#tecnologias-utilizadas).
 
 # 📊 Planejamento <a name = "planejamento"></a>
+
+<img src="imagem/Sprints.png" alt="Project logo"></a>
 ## Sprints 1 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/1entrega.md)
 - Levantamento de requisitos, e Criação do DER *(Back-end)*
 - Inicio da modelagem do banco de dados *(Back-end)*
