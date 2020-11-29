@@ -9,7 +9,7 @@ https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3
 ### Gerenciador de logs do servidor 
 - Gerenciador de LOG da aplicação.
 
-### Software de monitoramento -Grafana 
+### Software de monitoramento - Zabbix Grafana
 #### Endpoints (Itens monitorados)
 - [health] - Mostra informações de integridade do aplicativo (um status' simples quando acessado por uma conexão não autenticada ou detalhes completos da mensagem quando autenticado); não é sensível por padrão
 - [info] – Exibe informações arbitrárias do aplicativo; não sensível por padrão
