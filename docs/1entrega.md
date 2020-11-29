@@ -12,8 +12,8 @@ Detalhar as atividades realizadas:
 ![Metabase Product Screenshot](/imagem/Der.png)
 
 Modelos DDL e DML do Projeto
-- https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DDL.sql
-- https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DML.sql
+- [Modelos DDL](https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DDL.sql) 
+- [Modelos DML](https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DML.sql) 
 
 ### Back-end
 - Refatoração da aplicação (Back-end)
