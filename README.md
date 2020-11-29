@@ -27,7 +27,7 @@
 Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores, diretores, dublês, e diferentes categorias de filmes.
 
 
-## ⛏️ Tecnologias utilizadas:  <a name = "tech_utilizadas"></a> [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/Tecnologias.md)
+## ⛏️ Tecnologias utilizadas:  <a name = "tech_utilizadas"></a>(https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/Tecnologias.md)
 - [<img src="imagem\java.jpg" height=40px>](https://www.oracle.com/br/Java/) JAVA
 - [<img src="imagem\mysql.png" height=40px>](https://www.mysql.com//) MySQL
 - [<img src="imagem\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
