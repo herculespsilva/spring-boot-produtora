@@ -13,6 +13,10 @@
   <a href="#links">Links</a>
 </p>
 
+<h1 align="center">
+    <img alt="GoBarber" src="imagem/home.png" />
+</h1>
+
 ## 📝 Sumário
 - [Autores](#authors)
 - [Sobre](#about)
