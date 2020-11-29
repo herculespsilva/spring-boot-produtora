@@ -13,6 +13,9 @@ Detalhar as atividades realizadas:
 </h1>
 
 - Gerenciador de pipeline (DevOps)
+
+- Configuração Docker (Preparação do ambiente)(DevOps)
+  - O Pacote Docker foi criado e testado para subir com a aplicação se a necessidade de demais configurações no ambiente:
   - Arquivo DockerFile
   
   ```bash
@@ -35,7 +38,6 @@ Detalhar as atividades realizadas:
   CMD java ${ADDITIONAL_OPTS} -jar spring_boot_produtora.jar --spring.profiles.active=${PROFILE}
   ```
 
-- Configuração Docker (Preparação do ambiente)(DevOps)
-  - O Pacote Docker foi criado e testado para subir com a aplicação se a necessidade de demais configurações no ambiente:
+
 - Segurança por token com JWT (Back-end) 
   - Atividade realizada no Back-end
