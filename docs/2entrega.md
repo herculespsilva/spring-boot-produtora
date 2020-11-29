@@ -1,4 +1,7 @@
-# Sprint 2! [04/10/2020]
+# Planner
+https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3_EU/edit?ts=5f69525f#gid=0
+
+## Sprint 2 - 04/10/2020
 
 ### Implementação de Jenkins 
 - Implementação e criação de Job.
