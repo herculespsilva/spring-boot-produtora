@@ -3,10 +3,12 @@
  <img src="imagem/logo_fatecsjc.png" alt="Project logo"></a>
 </p>
 
+<h1 align="center">
+    <img alt="Gobarber" src="imagem/logo_fatecsjc.png" width="250px" />
+</h1>
+
 <h3 align="center">Produtora</h3>
 
-
-## 📝 Sumário
 <p align="center">
   <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,6 +18,15 @@
   <a href="#app">Planejamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#links">Links</a>
 </p>
+
+## 📝 Sumário
+- [Autores](#authors)
+- [Sobre](#about)
+- [Tecnologias utilizadas](#tech_utilizadas)
+- [Tecnologias utilizadas](#install)
+- [Acesso à aplicação](#app)
+- [Planejamento](#app)
+- [Links](#links)
 
 ## ✍️ Autores:  <a name = "authors"></a>
 - <img src="imagem\linkedln.png" height=15px> [Daniel Willians Ignacio de Souza](https://www.linkedin.com/in/danielwisouza/)
