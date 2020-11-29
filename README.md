@@ -2,7 +2,7 @@
     <img alt="Gobarber" src="imagem/logo_fatecsjc.png" width="250px" />
 </h1>
 
-<h3 align="center">Este repositório é utilizado academicamente para compartilhar as entregas para a disciplina de Laboratório de Projeto de Bando de Dados V, ministrada pelo professor Eduardo Sakaue. O objetivo do projeto é implementar um conjunto de melhores práticas de desenvolvimento de software (Dev) e operações de TI (Ops), DevOps para disponibilizar a aplicação web Antenas.</h3>
+Este repositório é utilizado academicamente para compartilhar as entregas para a disciplina de Laboratório de Projeto de Bando de Dados V, ministrada pelo professor Eduardo Sakaue. O objetivo do projeto é implementar um conjunto de melhores práticas de desenvolvimento de software (Dev) e operações de TI (Ops), DevOps para disponibilizar a aplicação web Antenas.
 
 <p align="center">
   <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
