@@ -49,7 +49,7 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="imagem\jenkins.png" height=40px>](https://www.jenkins.io/) Jenkins
 - [<img src="imagem\zabbix.png" height=40px>](https://www.zabbix.com/) Zabbix
 
-#  Instalação e execução  <a name = "tinstall"></a>
+#  ⚙️ Instalação e execução  <a name = "tinstall"></a>
 #### Pré-requisitos
 ```
 Instalar o maven e o docker para execução do projeto.
