@@ -2,7 +2,7 @@
     <img alt="Gobarber" src="imagem/logo_fatecsjc.png" width="250px" />
 </h1>
 
-Este repositório é utilizado academicamente para compartilhar as entregas para a disciplina de Laboratório de Projeto de Bando de Dados V, ministrada pelo professor Eduardo Sakaue. O objetivo do projeto é implementar um conjunto de melhores práticas de desenvolvimento de software (Dev) e operações de TI (Ops), DevOps para disponibilizar a aplicação web Antenas.
+Este repositório é utilizado academicamente para a disciplina de Laboratório de Projeto de Bando de Dados V, ministrada pelo professor Eduardo Sakaue na FATEC São José dos Campos - Prof. Jessen Vidal.
 
 <p align="center">
   <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -36,7 +36,6 @@ Este repositório é utilizado academicamente para compartilhar as entregas para
 ## 🕵🏼 Sobre <a name = "about"></a>
 
 Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores, diretores, dublês, e diferentes categorias de filmes.
-
 
 ## ⛏️ [Tecnologias utilizadas:](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/Tecnologias.md)  <a name = "tech_utilizadas"></a>
 - [<img src="imagem\java.jpg" height=40px>](https://www.oracle.com/br/Java/) JAVA
