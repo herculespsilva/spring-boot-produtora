@@ -5,11 +5,21 @@ https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3
 
 Detalhar as atividades realizadas:
 
+### Banco de Dados
 - Levantamento de requisitos, e Criação do DER (Back-end)
 - Inicio da modelagem do banco de dados (Back-end)
- <img src="/imagem/Der.png" alt="Der"></a>
+- Mudanças no banco de dados (Back-end)
+![Metabase Product Screenshot](/imagem/Der.png)
+
+Modelos DDL e DML do Projeto
+- https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DDL.sql
+- https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DML.sql
 
 - Refatoração da aplicação (Back-end)
 - Implementação dos serviços do ambiente (Back-end)
-- Mudanças no banco de dados (Back-end)
-- wireframes das paginas (Front-End)
+Mudanção na estrutura do Projeto migração para Spring Boot
+
+- Wireframes das paginas (Front-End)
+Criação e prototipação do design e tela inicial da aplicação: https://github.com/herculespsilva/spring-boot-produtora-back-end/tree/master/front%20end
+
+
