@@ -27,7 +27,7 @@
 Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores, diretores, dublês, e diferentes categorias de filmes.
 
 
-## ⛏️ Tecnologias utilizadas:  <a name = "tech_utilizadas"></a>
+## ⛏️ Tecnologias utilizadas:  <a name = "tech_utilizadas"></a> [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/Tecnologias.md)
 - [<img src="imagem\java.jpg" height=40px>](https://www.oracle.com/br/Java/) JAVA
 - [<img src="imagem\mysql.png" height=40px>](https://www.mysql.com//) MySQL
 - [<img src="imagem\maven.jpg" height=40px>](https://maven.apache.org/) Apache Maven
@@ -36,10 +36,7 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="imagem\docker.png" height=40px>](https://www.docker.com/) Docker
 - [<img src="imagem\aws.png" height=40px>](https://aws.amazon.com/pt/) AWS
 - [<img src="imagem\jenkins.png" height=40px>](https://www.jenkins.io/) Jenkins
-
-
-
-
+- [<img src="" height=40px>](https://www.zabbix.com/) Zabbix
 
 #  Instalação e execução  <a name = "tinstall"></a>
 ### Pré-requisitos
