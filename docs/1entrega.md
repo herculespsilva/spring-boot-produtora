@@ -15,10 +15,12 @@ Modelos DDL e DML do Projeto
 - https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DDL.sql
 - https://github.com/herculespsilva/spring-boot-produtora-back-end/blob/master/DML.sql
 
+### Back-end
 - Refatoração da aplicação (Back-end)
 - Implementação dos serviços do ambiente (Back-end)
-Mudanção na estrutura do Projeto migração para Spring Boot
+-- Mudanção na estrutura do Projeto migração para Spring Boot
 
+### Front-End
 - Wireframes das paginas (Front-End)
 Criação e prototipação do design e tela inicial da aplicação: https://github.com/herculespsilva/spring-boot-produtora-back-end/tree/master/front%20end
 
