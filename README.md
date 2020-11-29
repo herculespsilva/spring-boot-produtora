@@ -7,22 +7,13 @@
 
 
 ## 📝 Sumário
-
-- [Autores](#authors)
-- [Sobre](#about)
-- [Tecnologias utilizadas](#tech_utilizadas)
-- [Tecnologias utilizadas](#install)
-- [Acesso à aplicação](#app)
-- [Planejamento](#app)
-- [Links](#links)
-
 <p align="center">
   <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tech_utilizadas">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#installd">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#app">Acesso à aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#app">Planejamento</a>
+  <a href="#app">Planejamento</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#links">Links</a>
 </p>
 
