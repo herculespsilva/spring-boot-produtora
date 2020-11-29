@@ -36,7 +36,7 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="imagem\docker.png" height=40px>](https://www.docker.com/) Docker
 - [<img src="imagem\aws.png" height=40px>](https://aws.amazon.com/pt/) AWS
 - [<img src="imagem\jenkins.png" height=40px>](https://www.jenkins.io/) Jenkins
-- [<img src="" height=40px>](https://www.zabbix.com/) Zabbix
+- [<img src="imagem\zabbix.png" height=40px>](https://www.zabbix.com/) Zabbix
 
 #  Instalação e execução  <a name = "tinstall"></a>
 ### Pré-requisitos
