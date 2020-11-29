@@ -22,6 +22,6 @@ Modelos DDL e DML do Projeto
 
 ### Front-End
 - Wireframes das paginas (Front-End)
-Criação e prototipação do design e tela inicial da aplicação: https://github.com/herculespsilva/spring-boot-produtora-back-end/tree/master/front%20end
+  - Criação e prototipação do design e tela inicial da aplicação: https://github.com/herculespsilva/spring-boot-produtora-back-end/tree/master/front%20end
 
 
