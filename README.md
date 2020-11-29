@@ -78,9 +78,9 @@ User: admin Senha: 123
 ```
 Para a execução do projeto, é necessaria a instalação do [Apache Maven](#tecnologias-utilizadas), [MySql](#tecnologias-utilizadas) e [JAVA](#tecnologias-utilizadas).
 # 🗺️ Acesso aplicação <a name = "app"></a> 
-- Servidor de Aplicação:
-- Servidor Jenkins:
-- Portainer.io:
+- Servidor de Aplicação: ec2-3-135-222-234.us-east-2.compute.amazonaws.com
+- Servidor Jenkins: ec2-3-135-222-234.us-east-2.compute.amazonaws.com
+- Portainer.io: ec2-3-135-222-234.us-east-2.compute.amazonaws.com
 
 # 📊 Planejamento <a name = "planejamento"></a>
 
