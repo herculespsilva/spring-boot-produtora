@@ -41,29 +41,29 @@ Projeto de um sistema de uma produtora, onde é realizado os cadastros de atores
 - [<img src="imagem\zabbix.png" height=40px>](https://www.zabbix.com/) Zabbix
 
 #  Instalação e execução  <a name = "tinstall"></a>
-### Pré-requisitos
+#### Pré-requisitos
 ```
 Instalar o maven e o docker para execução do projeto.
 ```
 
-#### Instalação
-#### 1 - Clone o projeto para uma máquina local
+##### Instalação
+##### 1 - Clone o projeto para uma máquina local
 ```
 git clone https://github.com/herculespsilva/spring-boot-produtora.git
 ```
-#### 2 - Instale as dependências do projeto
+##### 2 - Instale as dependências do projeto
 ```
 mvn clean package
 ```
-#### 3 - Iniciar a aplicação
+##### 3 - Iniciar a aplicação
 ```
 docker-compose up
 ```
-#### 4 - Rota padrão
+##### 4 - Rota padrão
 ```
 localhost:8080/spring-app
 ```
-#### 5 - Usuário administrador
+##### 5 - Usuário administrador
 ```
 User: admin Senha: 123
 ```
@@ -76,7 +76,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 # 📊 Planejamento <a name = "planejamento"></a>
 
 <img src="imagem/Sprints.png" alt="Project logo"></a>
-## Sprints 1 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/1entrega.md)
+## Sprint 1 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/1entrega.md)
 - Levantamento de requisitos, e Criação do DER *(Back-end)*
 - Inicio da modelagem do banco de dados *(Back-end)*
 - Refatoração da aplicação *(Back-end)*
@@ -84,7 +84,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Mudanças no banco de dados *(Back-end)*
 - wireframes das paginas *(Front-End)*
 
-## Sprints 2 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/2entrega.md)
+## Sprint 2 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/2entrega.md)
 - REST com Spring *(Back-end)*
 - Controllers e Métodos de acesso (get, post, put e delete) *(Back-end)*
 - Formatação de JSON. CORS *(Back-end)*
@@ -95,26 +95,26 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Gerenciador de logs do servidor *(DevOps)*
 - Software de monitoramento - Métrica e Indicadores *(DevOps)* Parte 1
 
-## Sprints 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
+## Sprint 3 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/3entrega.md)
 - Deploy (AWS) *(DevOps)*
 - Gerenciador de pipeline *(DevOps)* 
 - Configuração Docker (Preparação do ambiente)*(DevOps)*
 - Segurança por token com JWT *(Back-end)*
 
-## Sprints 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
+## Sprint 4 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/4entrega.md)
 - Software de monitoramento - Grafana Deploy Prometheus using Docker *(DevOps)* Parte 2 ( Vídeo: http://bit.ly/MonitorZabbix )
 - Deploy automático (Jenkins with Docker Deploy AWS) ( Vídeo: http://bit.ly/AWS-AUTO-DEPLOY )
 - Criação de front-end em Vue.js *(front-end)*
 - Controle de estado com Vuex *(front-end)*
 - Tratamento de erro em requisições (axios) *(Back-end)*
 
-## Sprints 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
+## Sprint 5 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/5entrega.md)
 - Automatização de integração de testes *(DevOps)* 
 - Divisão de ambiente (Teste/Produção) *(DevOps)* 
 - Orquestador de deploy(portainer.io) *(DevOps)*
 - Gestão de Mudanças Banco de Dados(liquibase) *(DevOps)*
 
-## Sprints 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
+## Sprint 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
 - Entrega funcional com exemplo simulando ambiente real
 - Conclusão da documentação
 - Criação do vídeo explicando o projeto
