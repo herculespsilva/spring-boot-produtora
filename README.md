@@ -11,10 +11,20 @@
 - [Autores](#authors)
 - [Sobre](#about)
 - [Tecnologias utilizadas](#tech_utilizadas)
-- [Instalação e execução](#install)
+- [Tecnologias utilizadas](#install)
 - [Acesso à aplicação](#app)
-- [Planejamento](#planejamento)
+- [Planejamento](#app)
 - [Links](#links)
+
+<p align="center">
+  <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tech_utilizadas">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#installd">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#app">Acesso à aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#app">Planejamento</a>
+  <a href="#links">Links</a>
+</p>
 
 ## ✍️ Autores:  <a name = "authors"></a>
 - <img src="imagem\linkedln.png" height=15px> [Daniel Willians Ignacio de Souza](https://www.linkedin.com/in/danielwisouza/)
