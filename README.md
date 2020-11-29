@@ -1,14 +1,8 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img src="imagem/logo_fatecsjc.png" alt="Project logo"></a>
-</p>
-
 <h1 align="center">
     <img alt="Gobarber" src="imagem/logo_fatecsjc.png" width="250px" />
 </h1>
 
 <h3 align="center">Produtora</h3>
-
 <p align="center">
   <a href="#authors">Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#about">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
