@@ -7,8 +7,8 @@ Detalhar as atividades realizadas:
 
 - Levantamento de requisitos, e Criação do DER (Back-end)
 - Inicio da modelagem do banco de dados (Back-end)
- <img src="imagem/der.png" alt="Der"></a>
- 
+ <img src="/imagem/Der.png" alt="Der"></a>
+
 - Refatoração da aplicação (Back-end)
 - Implementação dos serviços do ambiente (Back-end)
 - Mudanças no banco de dados (Back-end)
