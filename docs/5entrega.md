@@ -11,7 +11,7 @@ Detalhar as atividades realizadas:
 - Orquestador de deploy(portainer.io) (DevOps)
 
 <h1 align="center">
-    <img alt="Gobarber" src="imagem/portainer_io.jpeg" width="250px" />
+    <img alt="Gobarber" src="/imagem/portainer_io.jpeg" width="250px" />
 </h1>
 
 - Gestão de Mudanças Banco de Dados(liquibase) (DevOps)
