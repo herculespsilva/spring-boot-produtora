@@ -8,4 +8,4 @@ Detalhar as atividades realizadas:
 
 - Entrega funcional com exemplo simulando ambiente real
 - Conclusão da documentação
-- Criação do vídeo explicando o projeto
+- Criação do vídeo explicando o projeto (Posteriormente link do Vídeo)
