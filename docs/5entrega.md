@@ -9,4 +9,7 @@ Detalhar as atividades realizadas:
 - Automatização de integração de testes (DevOps)
 - Divisão de ambiente (Teste/Produção) (DevOps)
 - Orquestador de deploy(portainer.io) (DevOps)
+
+portainer_io.jpeg
+
 - Gestão de Mudanças Banco de Dados(liquibase) (DevOps)
