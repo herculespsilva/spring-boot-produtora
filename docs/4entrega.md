@@ -8,7 +8,7 @@ Detalhar as atividades realizadas:
 
 - Software de monitoramento - Grafana Deploy Prometheus using Docker (DevOps) Parte 2 ( Vídeo: http://bit.ly/MonitorZabbix )
 <h1 align="center">
-    <img alt="GoBarber" src="/imagem/Zabbix_home.png" />
+    <img alt="GoBarber" src="/imagem/zabbix_home.png" />
 </h1>
 - Deploy automático (Jenkins with Docker Deploy AWS) ( Vídeo: http://bit.ly/AWS-AUTO-DEPLOY )
 - Criação de front-end em Vue.js (front-end)
