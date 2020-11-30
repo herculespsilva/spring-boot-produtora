@@ -54,6 +54,27 @@ Temos abas que nos ajudam a monitorar o status do projeto, as mudanças realizad
     <img alt="Jenkins" src="/imagem/Jenkins/dashboardBluid.jpg" />
 </h1>
 
+- (Tela do console).
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/consoleBuild.jpg" />
+</h1>
+
+- Todos esses estágios da nossa esteira são programados via pipeline script com pipeline syntax.
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/sintax.jpg" />
+</h1>
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/sintax2.jpg" />
+</h1>
+
+- Por fim, temos um panorama da nossa esteira de CI/CD. Que nos permite identificar as etapas de validação pelas quais o projeto passa até ser realizada sua construção e o mesmo ir para deploy no servidor.
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/esteiraJenkins.jpg" />
+</h1>
 
 - Configuração Docker (Preparação do ambiente)(DevOps)
   - O Pacote Docker foi criado e testado para subir com a aplicação se a necessidade de demais configurações no ambiente:
