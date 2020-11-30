@@ -81,6 +81,7 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Servidor de Aplicação: ec2-3-135-222-234.us-east-2.compute.amazonaws.com
 - Servidor Jenkins: ec2-3-135-222-234.us-east-2.compute.amazonaws.com
 - Portainer.io: ec2-3-135-222-234.us-east-2.compute.amazonaws.com
+- Zabbix : http://ec2-3-134-83-114.us-east-2.compute.amazonaws.com/zabbix/ -> U: Admin P:zabbix
 
 # 📊 Planejamento <a name = "planejamento"></a>
 
