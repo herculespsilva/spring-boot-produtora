@@ -14,6 +14,8 @@ Detalhar as atividades realizadas:
     <img alt="Gobarber" src="/imagem/portainer_io.jpeg" />
 </h1>
 
+- Link Portainer.io:34.68.198.147:9000
+
 - Gestão de Mudanças Banco de Dados(liquibase) (DevOps)
 
 <h1 align="center">
