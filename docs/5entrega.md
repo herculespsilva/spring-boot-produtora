@@ -9,12 +9,11 @@ Detalhar as atividades realizadas:
 - Automatização de integração de testes (DevOps)
 - Divisão de ambiente (Teste/Produção) (DevOps)
 - Orquestador de deploy(portainer.io) (DevOps)
-    - Imagem de exemplo das configurações;   
+    - Imagem de exemplo das configurações;
+    - Link Portainer.io:34.68.198.147:9000
 <h1 align="center">
     <img alt="Gobarber" src="/imagem/portainer_io.jpeg" />
 </h1>
-
-- Link Portainer.io:34.68.198.147:9000
 
 - Gestão de Mudanças Banco de Dados(liquibase) (DevOps)
 
