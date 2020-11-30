@@ -14,6 +14,8 @@ Detalhar as atividades realizadas:
 
 - Gerenciador de pipeline (DevOps)
 
+- Link Jenkins: 34.122.170.162:8080
+
 - Nosso job é do tipo Pipeline job, onde criamos procuramos criar nossa esteira de CI (integração contínua) e CD (entrega contínua).
 
 <h1 align="center">
