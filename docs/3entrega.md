@@ -9,7 +9,15 @@ Detalhar as atividades realizadas:
 - Deploy (AWS) (DevOps)
   - Foram criadas as maquinas no E2 AWS e configurada aplicação.
 <h1 align="center">
-    <img alt="GoBarber" src="/imagem/AWS-Deploy.png" />
+    <img alt="GoBarber" src="/imagem/AWS-Deploy.jpeg)" />
+</h1>
+
+<h1 align="center">
+    <img alt="GoBarber" src="/imagem/Server_Aplicação_Portainer.io.png" />
+</h1>
+
+<h1 align="center">
+    <img alt="GoBarber" src="/imagem/Server_Jenkins.jpeg)" />
 </h1>
 
 - Gerenciador de pipeline (DevOps)
