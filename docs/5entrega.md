@@ -10,6 +10,8 @@ Detalhar as atividades realizadas:
 - Divisão de ambiente (Teste/Produção) (DevOps)
 - Orquestador de deploy(portainer.io) (DevOps)
 
-portainer_io.jpeg
+<h1 align="center">
+    <img alt="Gobarber" src="imagem/portainer_io.jpeg" width="250px" />
+</h1>
 
 - Gestão de Mudanças Banco de Dados(liquibase) (DevOps)
