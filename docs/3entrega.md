@@ -109,7 +109,21 @@ Temos abas que nos ajudam a monitorar o status do projeto, as mudanças realizad
 
   CMD java ${ADDITIONAL_OPTS} -jar spring_boot_produtora.jar --spring.profiles.active=${PROFILE}
   ```
+- Configuração Docker (Preparação do ambiente)
+  - Container configurado e UP pelo CMD utilizando o comando docker-compose up:
+<h1 align="center">
+    <img alt="GoBarber" src="/imagem/DockerUPcmd.jpg" />
+</h1>
 
+  - Imagens:
+<h1 align="center">
+    <img alt="GoBarber" src="/imagem/ImagesRunningDocker.jpg" />
+</h1>
+
+  - Container rodando com sucesso:
+<h1 align="center">
+    <img alt="GoBarber" src="/imagem/ContainerRunning.jpg" />
+</h1>
 
 - Segurança por token com JWT (Back-end) 
   - Atividade realizada no Back-end
