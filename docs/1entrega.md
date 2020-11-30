@@ -1,6 +1,5 @@
 # Planner
-https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3_EU/edit?ts=5f69525f#gid=0
-
+https://docs.google.com/spreadsheets/d/1mNOZf25Y3lUe_l0IHLoR8n6leSyUme98XPYl68mRUEA/edit#gid=0
 ## Sprint 1 - 21/09/2020
 
 Detalhar as atividades realizadas:
