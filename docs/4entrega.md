@@ -13,4 +13,4 @@ Detalhar as atividades realizadas:
 - Deploy automático (Jenkins with Docker Deploy AWS) ( Vídeo: http://bit.ly/AWS-AUTO-DEPLOY )
 - Criação de front-end em Vue.js (front-end)
 - Controle de estado com Vuex (front-end)
-T- ratamento de erro em requisições (axios) (Back-end)
+- Tratamento de erro em requisições (axios) (Back-end)
