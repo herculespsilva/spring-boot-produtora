@@ -17,7 +17,7 @@ Detalhar as atividades realizadas:
 </h1>
 
 <h1 align="center">
-    <img alt="GoBarber" src="/imagem/Server_Jenkins.jpeg)" />
+    <img alt="GoBarber" src="/imagem/Server_Jenkins.jpeg" />
 </h1>
 
 - Gerenciador de pipeline (DevOps)
