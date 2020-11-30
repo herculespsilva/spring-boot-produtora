@@ -1,6 +1,6 @@
 # Planner
 
-https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3_EU/edit?ts=5f69525f#gid=0
+https://docs.google.com/spreadsheets/d/1TkCrRUHple8hmNI0jp1qU20dUsHuNtXHd2m8KdDF88I/edit#gid=0
 
 ## Sprint 3 
 
