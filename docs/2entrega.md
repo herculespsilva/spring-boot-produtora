@@ -37,6 +37,6 @@ https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3
 <h1 align="center">
     <img alt="Gobarber" src="/imagem/env.png" />
 </h1>
-##### Installation
-Requisitos: [actuator].
+
+
 
