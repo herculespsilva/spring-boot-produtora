@@ -9,7 +9,7 @@ Detalhar as atividades realizadas:
 - Automatização de integração de testes (DevOps)
 - Divisão de ambiente (Teste/Produção) (DevOps)
 - Orquestador de deploy(portainer.io) (DevOps)
-    - Imagem de exemplo das configurações   
+    - Imagem de exemplo das configurações;   
 <h1 align="center">
     <img alt="Gobarber" src="/imagem/portainer_io.jpeg" />
 </h1>
