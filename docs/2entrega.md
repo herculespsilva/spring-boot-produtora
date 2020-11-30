@@ -5,6 +5,11 @@ https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3
 
 ### Implementação de Jenkins 
 - Implementação e criação de Job.
+- Dashboard com o job criado. Onde podemos visualizar o estado de “saúde” do projeto.
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/dashboard.png" />
+</h1>
 
 ### Gerenciador de logs do servidor 
 - Gerenciador de LOG da aplicação.
