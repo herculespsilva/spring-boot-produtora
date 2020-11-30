@@ -4,6 +4,7 @@ https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3
 ## Sprint 2 - 04/10/2020
 
 ### Implementação de Jenkins 
+- Link Jenkins: 34.122.170.162:8080
 - Implementação e criação de Job.
 - Dashboard com o job criado. Onde podemos visualizar o estado de “saúde” do projeto.
 
