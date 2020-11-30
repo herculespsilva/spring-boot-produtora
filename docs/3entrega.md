@@ -14,6 +14,47 @@ Detalhar as atividades realizadas:
 
 - Gerenciador de pipeline (DevOps)
 
+- Nosso job é do tipo Pipeline job, onde criamos procuramos criar nossa esteira de CI (integração contínua) e CD (entrega contínua).
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/pipeline1.jpg" />
+</h1>
+
+- O projeto foi configurado para olhar o nosso repositório de código no GitHub e manter um histórico mínimo de builds. 
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/configuracaoJenkins.jpg" />
+</h1>
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/configuracaoJenkins2.jpg" />
+</h1>
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/buidJenkins.jpg" />
+</h1>
+
+- Também foi configurado para estar constantemente olhando para as alterações que são feitas no repositório (commits).
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/buidTriggerJenkins.jpg" />
+</h1>
+
+- Nosso Pipeline possui algumas configurações e estágios: Primeiramente são configurados os agentes que pode executar o pipeline.
+Temos também a configuração das ferramentas necessárias, no nosso caso especifico, temos a configuração do Maven.
+Estágio de Checkout, onde buscamos o código do repositório no GitHub.
+Estágio de Test, estágio onde a aplicação é testada e passa por um processo de validação.
+Estágio de Build, onde após os testes é feita a construção do projeto.
+Esses estágios citados anteriormente são importantes pois nos permitem monitorar a aplicação, onde temos algumas ferramentas que nos ajudam a identificar possíveis erros e falhas.
+Temos abas que nos ajudam a monitorar o status do projeto, as mudanças realizadas e a nível de build, podemos visualizar até mesmo uma saída via console com os logs.
+
+-(Dashboard de um build do projeto).
+
+<h1 align="center">
+    <img alt="Jenkins" src="/imagem/Jenkins/dashboardBluid.jpg" />
+</h1>
+
+
 - Configuração Docker (Preparação do ambiente)(DevOps)
   - O Pacote Docker foi criado e testado para subir com a aplicação se a necessidade de demais configurações no ambiente:
   - Arquivo DockerFile
