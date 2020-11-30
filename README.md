@@ -130,3 +130,14 @@ Para a execução do projeto, é necessaria a instalação do [Apache Maven](#te
 - Criação do vídeo explicando o projeto
 
 # 💾 Links <a name = "links"></a>
+
+- JAVA https://www.oracle.com/br/Java/
+- MySQL https://www.mysql.com/
+- Apache Maven https://maven.apache.org/
+- Hibernate https://hibernate.org/
+- Spring https://spring.io/
+- Docker https://www.docker.com/
+- Portainer.io https://www.zabbix.com/
+- AWS https://aws.amazon.com/pt/
+- Jenkins https://www.jenkins.io/ 
+- Zabbix https://www.zabbix.com/
