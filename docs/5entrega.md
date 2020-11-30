@@ -15,3 +15,7 @@ Detalhar as atividades realizadas:
 </h1>
 
 - Gestão de Mudanças Banco de Dados(liquibase) (DevOps)
+
+<h1 align="center">
+    <img alt="liquibase" src="/imagem/liquibase/liquibase.png" />
+</h1>
