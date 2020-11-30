@@ -28,7 +28,7 @@ https://docs.google.com/spreadsheets/d/1iBjzTlbTCAl8IbTy4ZK2eDo1gXeKv9yw4qn_5Ui3
 - [sessions] – lista as sessões HTTP, pois estamos usando o Spring Session
 - [shutdown] – executa um desligamento normal do aplicativo */threaddump – despeja as informações de encadeamento da JVM subjacente
 
-- Examples
+    - Examples
 
 <h1 align="center">
     <img alt="Gobarber" src="/imagem/actuator.png" />
