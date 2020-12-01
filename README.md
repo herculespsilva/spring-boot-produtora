@@ -125,9 +125,9 @@ User: admin Senha: 123
 - Gestão de Mudanças Banco de Dados(liquibase) *(DevOps)*
 
 ## Sprint 6 - [Documentação](https://github.com/herculespsilva/spring-boot-produtora/tree/master/docs/6entrega.md)
-- Ajustes e correção das ferramentas *(DevOps)*
+- Ajustes e correções das ferramentas *(DevOps)*
 - Conclusão da documentação
-- Entrega funcional com exemplo simulando ambiente real
+- Entrega funcional com exemplo
 - Criação do vídeo explicando o projeto
 
 # 💾 Links <a name = "links"></a>
