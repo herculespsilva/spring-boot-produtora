@@ -16,6 +16,7 @@ Uso do framework Spring Boot para maior segurança no back-end e maior velocidad
 - Utilizado para criar imagem do projeto para que a infraestrutura não precise ser configurada. 
 
 ## Portainer.io
+ O Portainer simplifica o gerenciamento de contêineres em ambientes Docker para acelerar implantações de software, solucionar problemas e simplificar migrações.
  
 ## Zabbix
 - Uma ferramenta de software de monitoramento de código aberto para diversos componentes de TI, incluindo redes, servidores, máquinas virtuais e serviços em nuvem. O Zabbix fornece métricas de monitoramento, entre outras, utilização da rede, carga da CPU e consumo de espaço em disco.
